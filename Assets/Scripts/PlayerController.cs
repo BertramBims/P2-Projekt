@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        HandleAnimation();
+        //HandleAnimation();
     }
 
     private void FixedUpdate()
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void HandleAnimation()
+    /*void HandleAnimation()
     {
         bool isMoving = moveInput.sqrMagnitude > 0.01f;
 
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("LastMoveX", lastMove.x);
         animator.SetFloat("LastMoveY", lastMove.y);
         animator.SetBool("IsMoving", isMoving);
-    }
+    }*/
 
     public void OnMove(InputAction.CallbackContext ctx)
     {
