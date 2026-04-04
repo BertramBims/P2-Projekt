@@ -7,6 +7,8 @@ public class PlayerMobilityController : MonoBehaviour
     public float moveSpeed = 5f;
     public float rotationSpeed = 200f;
 
+    public bool beingPushed = false;
+
     private float leftInput;
     private float rightInput;
 
@@ -14,6 +16,7 @@ public class PlayerMobilityController : MonoBehaviour
     private Animator animator;
 
     private float forward;
+    public GameObject playerVisual;
 
     [SerializeField] private Transform visual;
     [SerializeField] private Transform cameraTransform;
@@ -46,8 +49,14 @@ public class PlayerMobilityController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        HandleMovement();
-        HandleAnimation();
+        if (!beingPushed)
+        {
+            HandleMovement();
+            HandleAnimation();
+        } else
+        {
+            OverrideAnimation();
+        }
     }
 
     private void LateUpdate()
@@ -95,5 +104,11 @@ public class PlayerMobilityController : MonoBehaviour
             animator.SetFloat("MoveX", dir.x);
             animator.SetFloat("MoveY", dir.y);
         }
+    }
+
+    void OverrideAnimation()
+    {
+        animator.SetFloat("MoveX", playerVisual.GetComponent<PlayerController>().moveInput.x);
+        animator.SetFloat("MoveY", playerVisual.GetComponent<PlayerController>().moveInput.y);
     }
 }
