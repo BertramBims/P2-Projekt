@@ -55,7 +55,9 @@ public class PlayerMobilityController : MonoBehaviour
             HandleAnimation();
         } else
         {
+            Debug.Log("Overriding");
             OverrideAnimation();
+            transform.position = playerVisual.GetComponent<PlayerController>().playerMobilityPositionTarget.position;
         }
     }
 

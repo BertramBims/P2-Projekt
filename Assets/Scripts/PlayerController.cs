@@ -60,10 +60,14 @@ public class PlayerController : MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext ctx)
     {
+
         if (ctx.performed)
         {
+            Debug.Log("Performed Interact");
             if (canPushPlayerMobility)
             {
+                Debug.Log("Should overtake control of Mobility_Player now");
+
                 //logic for overtaking control of other player
                 playerMobility.GetComponent<PlayerMobilityController>().beingPushed = true;
                 playerMobility.GetComponent<PlayerMobilityController>().playerVisual = gameObject;
@@ -71,6 +75,7 @@ public class PlayerController : MonoBehaviour
 
             if (playerMobility.GetComponent<PlayerMobilityController>().beingPushed == true)
             {
+                Debug.Log("Set BeingPushed to false");
                 playerMobility.GetComponent<PlayerMobilityController>().beingPushed = false;
             }
         }
@@ -95,17 +100,24 @@ public class PlayerController : MonoBehaviour
             {
                 Debug.Log("No Light2D found");
             }
-        } else if (collision.transform.name == "Backside")
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.name == "Backside")
         {
+            Debug.Log("Found Mobility_Player Back");
             canPushPlayerMobility = true;
             playerMobility = collision.transform.parent.gameObject;
         }
     }
 
-    public void OnCollisionExit2D(Collision2D collision)
+    public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.transform.name == "Backside")
         {
+            Debug.Log("Exited Area of Mobility_Player Back");
             canPushPlayerMobility = false;
         }
     }
