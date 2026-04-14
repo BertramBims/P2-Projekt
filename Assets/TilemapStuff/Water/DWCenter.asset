@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: DWCenter
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -8330832218492151401, guid: 0ae887b556324f443928c04966bbeda1, type: 3}
+  - {fileID: 8392799913511103614, guid: 0ae887b556324f443928c04966bbeda1, type: 3}
+  - {fileID: 7087973100156313825, guid: 0ae887b556324f443928c04966bbeda1, type: 3}
+  - {fileID: 3559361974351832940, guid: 0ae887b556324f443928c04966bbeda1, type: 3}
+  - {fileID: 1563965691992907255, guid: 0ae887b556324f443928c04966bbeda1, type: 3}
+  - {fileID: -3202375174605107801, guid: 0ae887b556324f443928c04966bbeda1, type: 3}
+  - {fileID: 5057810686587195449, guid: 0ae887b556324f443928c04966bbeda1, type: 3}
+  - {fileID: -6940034580833691776, guid: 0ae887b556324f443928c04966bbeda1, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
