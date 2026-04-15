@@ -348,10 +348,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 580632295081641488, guid: e55eb27dc7e11344fa92e44010b88478, type: 3}
-      propertyPath: 'ambienceClips.Array.data[2]'
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2086261377899494324, guid: e55eb27dc7e11344fa92e44010b88478, type: 3}
       propertyPath: m_Name
       value: SoundManager
@@ -394,22 +390,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5113801230633895314, guid: e55eb27dc7e11344fa92e44010b88478, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8362025855285664206, guid: e55eb27dc7e11344fa92e44010b88478, type: 3}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8362025855285664206, guid: e55eb27dc7e11344fa92e44010b88478, type: 3}
-      propertyPath: m_Volume
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8362025855285664206, guid: e55eb27dc7e11344fa92e44010b88478, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 68d77a1baa8fd6f46849ea50fe5878e1, type: 3}
-    - target: {fileID: 8362025855285664206, guid: e55eb27dc7e11344fa92e44010b88478, type: 3}
-      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
