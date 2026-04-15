@@ -50002,30 +50002,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 818338702022312326, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_Size.y
-      value: 0.3224938
-      objectReference: {fileID: 0}
-    - target: {fileID: 818338702022312326, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.53050005
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215021172648111799, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_Intensity
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215021172648111799, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215021172648111799, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: 'm_ApplyToSortingLayers.Array.data[0]'
-      value: 1684967629
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215021172648111799, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2872805624909054824, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.37
@@ -50065,70 +50041,6 @@ PrefabInstance:
     - target: {fileID: 2872805624909054824, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4184163531541271091, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_Intensity
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_LightType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_BlendStyleIndex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_LightCookieSprite
-      value: 
-      objectReference: {fileID: 288198838964034864, guid: 821be56b03e85684480840a3da363306, type: 3}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_PointLightInnerAngle
-      value: 127.74202
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_PointLightOuterAngle
-      value: 360
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_PointLightInnerRadius
-      value: 0.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_PointLightOuterRadius
-      value: 0.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_LocalBounds.m_Center.x
-      value: -0.0625
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_LocalBounds.m_Center.y
-      value: -0.09375
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_LocalBounds.m_Extent.x
-      value: 0.6875
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_LocalBounds.m_Extent.y
-      value: 0.90625
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: 'm_ApplyToSortingLayers.Array.data[0]'
-      value: 1684967629
-      objectReference: {fileID: 0}
-    - target: {fileID: 7523949394088920309, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
-      propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
-      value: 1684967629
       objectReference: {fileID: 0}
     - target: {fileID: 8846154100389716647, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: m_Name
