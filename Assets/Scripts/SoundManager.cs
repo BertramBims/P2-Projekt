@@ -24,9 +24,9 @@ public class SoundManager : MonoBehaviour
     public AudioSource ambience3;
 
     private float targetVolume = 0.5f;
-    private bool musicLevel1 = false;
 
     public AudioClip[] ambienceClips; // Background Sounds
+    public AudioClip[] musicClips; // Music Sounds
 
     void Awake()
     {
@@ -55,16 +55,20 @@ public class SoundManager : MonoBehaviour
         StopAllAmbience();
 
         musicInGame.Stop();
-        musicLevel1 = false;
 
         int levelIndex = scene.buildIndex;
+
+        if (levelIndex < musicClips.Length && musicClips[levelIndex] != null)
+        {
+            musicInGame.clip = musicClips[levelIndex];
+            musicInGame.volume = 0f;
+            musicInGame.Play();
+        }
 
         switch (levelIndex) // 3 Ambient sounds for each level
         {
             case 0:
                 PlayAmbience(0, 1, 2); // Level 1
-                musicLevel1 = true;
-                musicInGame.Play();
                 break;
 
             case 1:
@@ -152,7 +156,7 @@ public class SoundManager : MonoBehaviour
             ambience1.volume = Mathf.Lerp(ambience1.volume, targetVolume, Time.deltaTime * 0.5f); // Start lyd til tarrget, med en hastighed
         }
 
-        if (musicLevel1 && musicInGame.isPlaying)
+        if (musicInGame.isPlaying)
         {
             float timeLeft = musicInGame.clip.length - musicInGame.time;
 
