@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SerhatScene.unity
+    guid: 42e9323e81075a94fb8a41921b23b758
   - enabled: 1
     path: Assets/Scenes/eda.unity
     guid: 1b3183fa114c34d0aac28425e0075888
