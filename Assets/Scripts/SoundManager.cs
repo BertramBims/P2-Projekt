@@ -140,10 +140,10 @@ public class SoundManager : MonoBehaviour
         {
             if (Mathf.Abs(ambience1.volume - targetVolume) < 0.05f)
             {
-                targetVolume = Random.Range(0.2f, 0.7f);
+                targetVolume = Random.Range(0.2f, 0.8f);
             }
             
-            ambience1.volume = Mathf.Lerp(ambience1.volume, targetVolume, Time.deltaTime);
+            ambience1.volume = Mathf.Lerp(ambience1.volume, targetVolume, Time.deltaTime * 0.5f);
         }
-    }
+    }   
 }
