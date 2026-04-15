@@ -133,8 +133,8 @@ TextureImporter:
         y: 0
         width: 96
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.0040736753}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,6 +143,72 @@ TextureImporter:
       bones: []
       spriteID: ce0cd60fcc7f715b0800000000000000
       internalID: -5397573168801136404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 16
+        width: 7
+        height: 16
+      alignment: 9
+      pivot: {x: 0.4757095, y: 0.004073739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b257a6598652be4291428890e8b1b82
+      internalID: 842499363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 16
+        width: 9
+        height: 16
+      alignment: 9
+      pivot: {x: 0.49370214, y: 0.000531435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9955e8e187e80b74e8aafbd3167b0ad4
+      internalID: 1448247498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 7
+        height: 16
+      alignment: 9
+      pivot: {x: 0.4919025, y: 0.004073739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe2662956dc7c74d8d6a2c10f01b7a6
+      internalID: 452113756
       vertices: []
       indices: 
       edges: []
@@ -164,6 +230,9 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Fence_0: -5397573168801136404
+      Fence_1: 842499363
+      Fence_2: 1448247498
+      Fence_3: 452113756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

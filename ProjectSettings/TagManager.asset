@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Mobility_Player
+  - Car
   layers:
   - Default
   - TransparentFX
