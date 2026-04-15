@@ -21,6 +21,9 @@ public class SoundManager : MonoBehaviour
     public AudioSource musicInGame;
     public AudioSource ambience1;
     public AudioSource ambience2;
+    public AudioSource ambience3;
+
+    private float targetVolume = 0.5f;
 
     public AudioClip[] ambienceClips; // Background Sounds
 
@@ -52,38 +55,40 @@ public class SoundManager : MonoBehaviour
 
         int levelIndex = scene.buildIndex;
 
-        switch (levelIndex)
+        switch (levelIndex) // 3 Ambient sounds for each level
         {
+            case 0:
+                PlayAmbience(0, 1, 2); // Level 1
+                break;
+
             case 1:
-                PlayAmbience(0, 1); // Level 1
+                PlayAmbience(3, 4, 5); // Level 2
                 break;
 
             case 2:
-                PlayAmbience(2, 3); // Level 2
+                PlayAmbience(6, 7, 8); // Level 3
                 break;
 
             case 3:
-                PlayAmbience(4, 5); // Level 3
-                break;
-
-            case 4:
-                PlayAmbience(6, 7); // Level 4
+                PlayAmbience(9, 10, 11); // Level 4
                 break;
 
             default:
                 Debug.LogWarning("Ingen ambience sat op for scene index: " + levelIndex);
                 break;
-        }
+        }   
     }
-    void PlayAmbience(int startIndex, int endIndex)
+    void PlayAmbience(int Amb1, int Amb2, int Amb3)
     {
-        if (endIndex < ambienceClips.Length)
+        if (Amb3 < ambienceClips.Length)
         {
-            ambience1.clip = ambienceClips[startIndex];
-            ambience2.clip = ambienceClips[endIndex];
+            ambience1.clip = ambienceClips[Amb1];
+            ambience2.clip = ambienceClips[Amb2];
+            ambience3.clip = ambienceClips[Amb3];
 
             ambience1.Play();
             ambience2.Play();
+            ambience3.Play();
         }
         else
         {
@@ -98,6 +103,9 @@ public class SoundManager : MonoBehaviour
 
         if (ambience2 != null)
             ambience2.Stop();
+        
+        if (ambience3 != null)
+            ambience3.Stop();
     }
 
     public void PlaySound(Soundtype type)
@@ -123,6 +131,19 @@ public class SoundManager : MonoBehaviour
                 if (pickupSound != null)
                     pickupSound.PlayOneShot(pickupSound.clip);
                 break;
+        }
+    }
+
+    private void Update()
+    {
+        if (ambience1.clip == ambienceClips[0])
+        {
+            if (Mathf.Abs(ambience1.volume - targetVolume) < 0.05f)
+            {
+                targetVolume = Random.Range(0.2f, 0.7f);
+            }
+            
+            ambience1.volume = Mathf.Lerp(ambience1.volume, targetVolume, Time.deltaTime);
         }
     }
 }

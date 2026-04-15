@@ -1019,9 +1019,14 @@ MonoBehaviour:
   collisionBump: {fileID: 1247303189}
   pickupSound: {fileID: 1539565490}
   musicInGame: {fileID: 819818861}
-  ambience1: {fileID: 0}
-  ambience2: {fileID: 0}
+  ambience1: {fileID: 1688015126}
+  ambience2: {fileID: 1782771481}
+  ambience3: {fileID: 0}
   ambienceClips:
+  - {fileID: 8300000, guid: 68d77a1baa8fd6f46849ea50fe5878e1, type: 3}
+  - {fileID: 8300000, guid: fd5160c391e0c874b9bce4202256b2d1, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1096,7 +1101,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.333
   m_Pitch: 1
   Loop: 1
@@ -1225,8 +1230,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0.333
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
