@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 3426064224130119817}
   - component: {fileID: 1431864566365936696}
   - component: {fileID: 7878235212809459580}
+  - component: {fileID: 3439076959008122842}
   m_Layer: 0
   m_Name: Player_Visual_Visual
   m_TagString: Untagged
@@ -349,8 +350,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 780643861
-  m_SortingLayer: 2
+  m_SortingLayerID: 1684967629
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 288198838964034864, guid: 821be56b03e85684480840a3da363306, type: 3}
@@ -385,6 +386,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3439076959008122842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4957054430117823189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d16b6d274bc394f9f0397d9c71bc55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1 &7650545092868900152
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,8 +747,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8846154100389716647}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e88d029aa4998c419dba90cf664b40f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSetup
+  goToSpawn: 1

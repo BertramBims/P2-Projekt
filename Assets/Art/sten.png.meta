@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 26beb801410294cdca7239d7567ee6c2
+guid: 63aa205685fa5a0418a92473714db954
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6090127298003676509
-    second: house2 1_0
+      213: -4588141277307187508
+    second: sten_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 64
+    maxTextureSize: 32
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: house2 1_0
+      name: sten_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.0041013537}
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5d2b6ab28a748450800000000000000
-      internalID: 6090127298003676509
+      spriteID: cce4cca31d5a350c0800000000000000
+      internalID: -4588141277307187508
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 033d9e81d9130ac4997455e3591c8b7a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      house2 1_0: 6090127298003676509
+      sten_0: -4588141277307187508
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
