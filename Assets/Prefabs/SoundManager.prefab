@@ -172,11 +172,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Resource: {fileID: 8300000, guid: 68d77a1baa8fd6f46849ea50fe5878e1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
   ambienceClips:
   - {fileID: 8300000, guid: 249e9fc01c38e4342a900961d0c7dae9, type: 3}
   - {fileID: 8300000, guid: fd5160c391e0c874b9bce4202256b2d1, type: 3}
-  - {fileID: 8300000, guid: 68d77a1baa8fd6f46849ea50fe5878e1, type: 3}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
