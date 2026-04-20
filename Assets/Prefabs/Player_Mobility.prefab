@@ -447,6 +447,7 @@ GameObject:
   - component: {fileID: 6766775857627217889}
   - component: {fileID: 5166639105118054858}
   - component: {fileID: 4725585374401390904}
+  - component: {fileID: -8049441643231715582}
   m_Layer: 0
   m_Name: Player_Mobility
   m_TagString: Mobility_Player
@@ -642,6 +643,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSetup
   goToSpawn: 0
+--- !u!114 &-8049441643231715582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5731291562873396839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e44176c038804e4a8a46d003b10c61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
 --- !u!1 &7068937296203690494
 GameObject:
   m_ObjectHideFlags: 0
