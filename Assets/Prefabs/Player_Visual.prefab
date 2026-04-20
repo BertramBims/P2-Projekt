@@ -497,6 +497,7 @@ GameObject:
   - component: {fileID: 818338702022312326}
   - component: {fileID: 6718732289684283559}
   - component: {fileID: 6524340925487535591}
+  - component: {fileID: 3362297054708612980}
   m_Layer: 0
   m_Name: Player_Visual
   m_TagString: Untagged
@@ -753,3 +754,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSetup
   goToSpawn: 1
+--- !u!114 &3362297054708612980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8846154100389716647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e44176c038804e4a8a46d003b10c61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
