@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4316379205450291294}
   - component: {fileID: 5770191955791689535}
   - component: {fileID: 544659857364784731}
-  - component: {fileID: 8081182462068749779}
+  - component: {fileID: -7180550832261958607}
   m_Layer: 0
-  m_Name: car_4_0
+  m_Name: Car_Sports+
   m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.15409696}
+  m_Offset: {x: -0.033620954, y: -0.22133923}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -79,7 +79,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.874597, y: 1.4564579}
+  m_Size: {x: 3.8073556, y: 1.445251}
   m_EdgeRadius: 0
 --- !u!114 &544659857364784731
 MonoBehaviour:
@@ -93,10 +93,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42d071b99c4cd45f99c371c2c1538f9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Car
-  speed: 5
+  speed: 20
   direction: 1
   visual: {fileID: 1483936002543079519}
---- !u!60 &8081182462068749779
+--- !u!60 &-7180550832261958607
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,16 +142,21 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.9328818, y: 0.3791349}
-      - {x: 1.2948505, y: 0.93269634}
-      - {x: -0.28599587, y: 0.9357892}
-      - {x: -0.5996235, y: 0.5667345}
-      - {x: -1.3677189, y: 0.5636801}
-      - {x: -1.9390281, y: 0.30791947}
+    - - {x: 1.9945207, y: 0.95069456}
+      - {x: 1.639137, y: 0.61141706}
+      - {x: 1.300454, y: 0.87666106}
+      - {x: -0.29720291, y: 0.8741505}
+      - {x: -0.6836764, y: 0.4994922}
+      - {x: -1.367719, y: 0.49643782}
+      - {x: -1.9390281, y: 0.24067715}
       - {x: -1.9395417, y: -0.60406834}
       - {x: -1.6089731, y: -0.8739929}
-      - {x: 1.5621157, y: -0.8718071}
-      - {x: 1.935069, y: -0.5695655}
+      - {x: -1.3145444, y: -0.874651}
+      - {x: -1.3147032, y: -0.9355121}
+      - {x: 1.4500451, y: -0.93904936}
+      - {x: 1.868821, y: -0.62857175}
+      - {x: 1.828005, y: -0.26607633}
+      - {x: 1.9911041, y: -0.1885258}
   m_UseDelaunayMesh: 1
 --- !u!1 &7852964426067730923
 GameObject:
@@ -164,7 +169,7 @@ GameObject:
   - component: {fileID: 1483936002543079519}
   - component: {fileID: 3035154932873113925}
   m_Layer: 0
-  m_Name: VisualYellow
+  m_Name: VisualSports
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,9 +237,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5267950229397507766, guid: 5967b63b2c3d24518b8cf0255646034c, type: 3}
+  m_Sprite: {fileID: 4269551229032242949, guid: d31c63466b6b24424a13dcbc3f07c7f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

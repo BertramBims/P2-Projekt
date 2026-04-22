@@ -7,17 +7,22 @@ public class Car : MonoBehaviour
 
     public Transform visual;
 
+    private SpriteRenderer spriteRenderer;
+
     void Start()
     {
-        if (direction == 1)
-            visual.localRotation = Quaternion.Euler(0, 0, -90);
-        else
-            visual.localRotation = Quaternion.Euler(0, 0, 90);
+       spriteRenderer = visual.GetComponent<SpriteRenderer>();
     }
 
    void Update()
 {
     transform.Translate(Vector2.right * direction * speed * Time.deltaTime);
+
+    // Mirror sprite when moving in direction 1 (right)
+    if (spriteRenderer != null)
+    {
+        spriteRenderer.flipX = (direction == 1);
+    }
 
     if (Mathf.Abs(transform.position.x) > 10f)
     {
@@ -25,8 +30,4 @@ public class Car : MonoBehaviour
     }
 }
 
-    void OnBecameInvisible()
-{
-    Destroy(gameObject);
-}
 }
