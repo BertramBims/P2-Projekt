@@ -11,10 +11,15 @@ public class CarSpawner : MonoBehaviour
     public float maxSpawnTime = 3f;
 
     void Start()
-    {
-        StartCoroutine(SpawnRoutine());
-    
-    }
+{
+    StartCoroutine(DelayedStart());
+}
+
+IEnumerator DelayedStart()
+{
+    yield return new WaitForSeconds(Random.Range(0f, 2f));
+    StartCoroutine(SpawnRoutine());
+}
 
     IEnumerator SpawnRoutine()
     {
@@ -28,6 +33,7 @@ public class CarSpawner : MonoBehaviour
 
    void SpawnCar()
 {
+   
     GameObject randomCar = carPrefabs[Random.Range(0, carPrefabs.Length)];
 
     GameObject car = Instantiate(randomCar, spawnPoint.position, Quaternion.identity);

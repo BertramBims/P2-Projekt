@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5691453184585581585}
   - component: {fileID: -7745587745519829009}
   - component: {fileID: -5276130060115552624}
+  - component: {fileID: 2057599010495350815}
   m_Layer: 0
   m_Name: car_2_0
   m_TagString: Car
@@ -36,6 +37,67 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &-7745587745519829009
 BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452783650986562720}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.15409696}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.8125, y: 2}
+    newSize: {x: 0.29, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.874597, y: 1.445251}
+  m_EdgeRadius: 0
+--- !u!114 &-5276130060115552624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452783650986562720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42d071b99c4cd45f99c371c2c1538f9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Car
+  speed: 5
+  direction: 1
+  visual: {fileID: 3066824211318564264}
+--- !u!60 &2057599010495350815
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -68,33 +130,29 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.005603552, y: -0.005603552}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8125, y: 2}
-    newSize: {x: 0.29, y: 0.32}
-    adaptiveTilingThreshold: 0.5
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1961122, y: 2.011207}
-  m_EdgeRadius: 0
---- !u!114 &-5276130060115552624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452783650986562720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42d071b99c4cd45f99c371c2c1538f9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Car
-  speed: 5
-  direction: 1
-  visual: {fileID: 3066824211318564264}
+  m_Points:
+    m_Paths:
+    - - {x: 1.9328818, y: 0.3791349}
+      - {x: 1.2948505, y: 0.93269634}
+      - {x: -0.28599587, y: 0.9357892}
+      - {x: -0.5996235, y: 0.5667345}
+      - {x: -1.3677189, y: 0.5636801}
+      - {x: -1.9390281, y: 0.30791947}
+      - {x: -1.9395417, y: -0.60406834}
+      - {x: -1.6089731, y: -0.8739929}
+      - {x: 1.5621157, y: -0.8718071}
+      - {x: 1.935069, y: -0.5695655}
+  m_UseDelaunayMesh: 1
 --- !u!1 &7912885865222947327
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +234,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8976355621901348323, guid: 4152a8813285e4a8db8701a2a77ad392, type: 3}
+  m_Sprite: {fileID: -2974906739149573196, guid: 2c1a7391c63774910bb6fc5c06f947cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
