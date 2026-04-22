@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     private GameObject playerMobility;
     public Transform playerMobilityPositionTarget;
 
+    public bool onBumpyRoad;
+    public float bumpForce = 0.15f;
+
     private bool canPushPlayerMobility;
 
     private void Awake()
@@ -39,6 +42,14 @@ public class PlayerController : MonoBehaviour
         if (moveInput.sqrMagnitude > 0.01f)
         {
             lastMove = moveInput.normalized;
+        }
+
+        if (onBumpyRoad && moveInput.sqrMagnitude > 0.01f)
+        {
+            Debug.Log("Affected by Bumpy Road");
+            Vector2 bump = Random.insideUnitCircle * bumpForce;
+            rb.linearVelocity *= 0.5f;
+            rb.linearVelocity += bump;
         }
     }
 
