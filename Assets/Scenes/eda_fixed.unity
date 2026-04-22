@@ -4507,7 +4507,6 @@ GameObject:
   m_Component:
   - component: {fileID: 297261935}
   - component: {fileID: 297261936}
-  - component: {fileID: 297261937}
   m_Layer: 0
   m_Name: hegnny_1 (3)
   m_TagString: Obstacle
@@ -5180,7 +5179,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1899491344}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &329369295
 BoxCollider2D:
@@ -7393,7 +7392,6 @@ GameObject:
   m_Component:
   - component: {fileID: 414225504}
   - component: {fileID: 414225505}
-  - component: {fileID: 414225506}
   m_Layer: 0
   m_Name: hegnny_1 (10)
   m_TagString: Obstacle
@@ -19134,7 +19132,7 @@ TilemapRenderer:
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.16619289, y: 1.7037966, z: 0}
+  m_ChunkCullingBounds: {x: 0.15625, y: 0.625, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -71653,7 +71651,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1854585163}
   - component: {fileID: 1854585164}
-  - component: {fileID: 1854585165}
   m_Layer: 0
   m_Name: hegnny_1 (7)
   m_TagString: Obstacle
@@ -75141,7 +75138,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1899491344}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2006972544
 BoxCollider2D:
@@ -75306,7 +75303,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2028782837}
   - component: {fileID: 2028782838}
-  - component: {fileID: 2028782839}
   m_Layer: 0
   m_Name: hegnny_1
   m_TagString: Obstacle
@@ -78203,3 +78199,5 @@ SceneRoots:
   - {fileID: 1632185881}
   - {fileID: 1026402005}
   - {fileID: 1999193313}
+  - {fileID: 329369294}
+  - {fileID: 2006972543}
