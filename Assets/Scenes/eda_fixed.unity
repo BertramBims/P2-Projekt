@@ -79419,6 +79419,8 @@ MonoBehaviour:
   - {fileID: 1504859136}
   - {fileID: 231633667}
   - {fileID: 1739466473}
+  onBumpyRoad: 0
+  bumpForce: 0.15
 --- !u!114 &7694444038884036026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79601,7 +79603,6 @@ GameObject:
   - component: {fileID: 2565983799494149221}
   - component: {fileID: 6707593467038469921}
   - component: {fileID: 2303938460863217543}
-  - component: {fileID: 8397466364402948745}
   m_Layer: 0
   m_Name: Player_Visual_Visual
   m_TagString: Untagged
@@ -79609,18 +79610,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8397466364402948745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8397466364402948744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43b44add8fea3aa42b9d92ad05004e2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PushedAnimator
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
