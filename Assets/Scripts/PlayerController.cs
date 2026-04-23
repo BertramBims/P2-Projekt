@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
@@ -12,12 +13,13 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private GameObject playerMobility;
-    public Transform playerMobilityPositionTarget;
+    //public Transform playerMobilityPositionTarget;
+
+    private bool canPushPlayerMobility;
+    public List<Transform> pushedMovementSpots;
 
     public bool onBumpyRoad;
     public float bumpForce = 0.15f;
-
-    private bool canPushPlayerMobility;
 
     private void Awake()
     {
@@ -74,6 +76,12 @@ public class PlayerController : MonoBehaviour
 
         if (ctx.performed)
         {
+            if (playerMobility.GetComponent<PlayerMobilityController>().beingPushed == true)
+            {
+                Debug.Log("Set BeingPushed to false");
+                playerMobility.GetComponent<PlayerMobilityController>().beingPushed = false;
+            }
+
             Debug.Log("Performed Interact");
             if (canPushPlayerMobility)
             {
@@ -82,12 +90,6 @@ public class PlayerController : MonoBehaviour
                 //logic for overtaking control of other player
                 playerMobility.GetComponent<PlayerMobilityController>().beingPushed = true;
                 playerMobility.GetComponent<PlayerMobilityController>().playerVisual = gameObject;
-            }
-
-            if (playerMobility.GetComponent<PlayerMobilityController>().beingPushed == true)
-            {
-                Debug.Log("Set BeingPushed to false");
-                playerMobility.GetComponent<PlayerMobilityController>().beingPushed = false;
             }
         }
     }
