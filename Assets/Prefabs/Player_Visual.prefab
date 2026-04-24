@@ -498,6 +498,7 @@ GameObject:
   - component: {fileID: 6718732289684283559}
   - component: {fileID: 6524340925487535591}
   - component: {fileID: 3362297054708612980}
+  - component: {fileID: -7584855640331790628}
   m_Layer: 0
   m_Name: Player_Visual
   m_TagString: Untagged
@@ -609,7 +610,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.3224938}
+  m_Size: {x: 0.66310406, y: 0.3224938}
   m_EdgeRadius: 0
 --- !u!114 &6718732289684283559
 MonoBehaviour:
@@ -766,3 +767,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e44176c038804e4a8a46d003b10c61a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
+--- !u!114 &-7584855640331790628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8846154100389716647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac916520535142618a653111105355e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCheckpoint

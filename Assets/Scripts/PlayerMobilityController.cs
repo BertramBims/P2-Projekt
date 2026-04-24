@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -20,6 +21,9 @@ public class PlayerMobilityController : MonoBehaviour
 
     [SerializeField] private Transform visual;
     [SerializeField] private Transform cameraTransform;
+
+    public int beingPushedMovementSpot;
+    public bool debugMovementBool;
 
     private void Awake()
     {
@@ -49,15 +53,18 @@ public class PlayerMobilityController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!beingPushed)
+        if (!beingPushed && !debugMovementBool)
         {
             HandleMovement();
             HandleAnimation();
-        } else
+            GetComponent<BoxCollider2D>().enabled = true;
+        } else if (beingPushed && debugMovementBool)
         {
             Debug.Log("Overriding");
             OverrideAnimation();
-            transform.position = playerVisual.GetComponent<PlayerController>().playerMobilityPositionTarget.position;
+            //transform.position = playerVisual.GetComponent<PlayerController>().playerMobilityPositionTarget.position;
+            transform.position = playerVisual.GetComponent<PlayerController>().pushedMovementSpots[beingPushedMovementSpot - 1].transform.position;
+            GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 

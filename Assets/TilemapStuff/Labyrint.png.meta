@@ -1,43 +1,10 @@
 fileFormatVersion: 2
-guid: ddb1ed4c2016d3846a6a3e684905b8ce
+guid: 93f5b128d32201c4da89ac88ad441c65
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8559258754583456956
     second: Labyrint_0
-  - first:
-      213: 2792947737622065361
-    second: Labyrint_1
-  - first:
-      213: -8863839582233388359
-    second: Labyrint_2
-  - first:
-      213: -3559258735137224761
-    second: Labyrint_3
-  - first:
-      213: -1294922783938380142
-    second: Labyrint_4
-  - first:
-      213: 4049473019191424975
-    second: Labyrint_5
-  - first:
-      213: -8885632863574727223
-    second: Labyrint_6
-  - first:
-      213: 3559716935395754143
-    second: Labyrint_7
-  - first:
-      213: 74602421324075341
-    second: Labyrint_8
-  - first:
-      213: 8387284933975094474
-    second: Labyrint_9
-  - first:
-      213: -5953292771077458743
-    second: Labyrint_10
-  - first:
-      213: -4034702467102545031
-    second: Labyrint_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -150,11 +117,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 33
-        height: 49
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -171,20 +138,20 @@ TextureImporter:
       name: Labyrint_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 0
-        width: 34
-        height: 49
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1d0b1317b2b82c620800000000000000
-      internalID: 2792947737622065361
+      spriteID: ba5963625f7b2d242a86ccd08b9eb015
+      internalID: 337186376
       vertices: []
       indices: 
       edges: []
@@ -193,20 +160,20 @@ TextureImporter:
       name: Labyrint_2
       rect:
         serializedVersion: 2
-        x: 191
-        y: 0
-        width: 34
-        height: 50
+        x: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9ba9ee2dcd05df480800000000000000
-      internalID: -8863839582233388359
+      spriteID: 00a289c0af8ce3348a800378721cde51
+      internalID: -1961234315
       vertices: []
       indices: 
       edges: []
@@ -215,20 +182,20 @@ TextureImporter:
       name: Labyrint_3
       rect:
         serializedVersion: 2
-        x: 319
-        y: 0
-        width: 34
-        height: 49
+        x: 48
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7c78074c909fa9ec0800000000000000
-      internalID: -3559258735137224761
+      spriteID: 1b03618aebbf5fa40b25f76d2d6a1a5e
+      internalID: -409600839
       vertices: []
       indices: 
       edges: []
@@ -237,20 +204,20 @@ TextureImporter:
       name: Labyrint_4
       rect:
         serializedVersion: 2
-        x: 415
-        y: 0
-        width: 34
-        height: 49
+        x: 64
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 29efacbb692870ee0800000000000000
-      internalID: -1294922783938380142
+      spriteID: 82b6aced29542db4d8df24514017bfd3
+      internalID: -2115890345
       vertices: []
       indices: 
       edges: []
@@ -259,20 +226,20 @@ TextureImporter:
       name: Labyrint_5
       rect:
         serializedVersion: 2
-        x: 511
-        y: 0
-        width: 34
-        height: 49
+        x: 80
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fc7fe64814e923830800000000000000
-      internalID: 4049473019191424975
+      spriteID: 421b27e607262b845bc313db5dd58927
+      internalID: -1928601288
       vertices: []
       indices: 
       edges: []
@@ -281,20 +248,20 @@ TextureImporter:
       name: Labyrint_6
       rect:
         serializedVersion: 2
-        x: 639
-        y: 0
-        width: 34
-        height: 49
+        x: 96
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9c5671a1df3efa480800000000000000
-      internalID: -8885632863574727223
+      spriteID: cb3cb1bba1776b04b9fccf13615f6edd
+      internalID: 1999882455
       vertices: []
       indices: 
       edges: []
@@ -303,20 +270,20 @@ TextureImporter:
       name: Labyrint_7
       rect:
         serializedVersion: 2
-        x: 735
-        y: 0
-        width: 34
-        height: 49
+        x: 112
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f90c43b41b7a66130800000000000000
-      internalID: 3559716935395754143
+      spriteID: c8886c1a90337e54e8b90247b8ca38b9
+      internalID: 1813332376
       vertices: []
       indices: 
       edges: []
@@ -325,20 +292,20 @@ TextureImporter:
       name: Labyrint_8
       rect:
         serializedVersion: 2
-        x: 831
-        y: 0
-        width: 34
-        height: 50
+        x: 128
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d41d766c18a090100800000000000000
-      internalID: 74602421324075341
+      spriteID: deb2b9ce7bd885a46ac2bd0724d6d1b4
+      internalID: 2118838466
       vertices: []
       indices: 
       edges: []
@@ -347,20 +314,20 @@ TextureImporter:
       name: Labyrint_9
       rect:
         serializedVersion: 2
-        x: 895
-        y: 47
-        width: 34
-        height: 17
+        x: 144
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ac4329fa53f956470800000000000000
-      internalID: 8387284933975094474
+      spriteID: 411b9e4af5b1f2b4e8af7679c110764b
+      internalID: 415615937
       vertices: []
       indices: 
       edges: []
@@ -369,20 +336,20 @@ TextureImporter:
       name: Labyrint_10
       rect:
         serializedVersion: 2
-        x: 991
-        y: 47
-        width: 34
-        height: 17
+        x: 160
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9c4f60044c7a16da0800000000000000
-      internalID: -5953292771077458743
+      spriteID: 0447f54dacad1fd4a8db1e8a748fae74
+      internalID: -1484397393
       vertices: []
       indices: 
       edges: []
@@ -391,20 +358,658 @@ TextureImporter:
       name: Labyrint_11
       rect:
         serializedVersion: 2
-        x: 1087
-        y: 47
-        width: 34
-        height: 17
+        x: 176
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 97be5f1ab7bd108c0800000000000000
-      internalID: -4034702467102545031
+      spriteID: acce1800a7b5fa5418f0e34cb95339f6
+      internalID: 966829214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb80cb9470b2ff8438242e13665ea2e9
+      internalID: 1764108026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb4f12f67488834d8f7dbf2f9beb7e2
+      internalID: -88810325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c422f541feece46b5796bc6dcc9cf0
+      internalID: -2138679964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3004d7ffe27a2842a7897a25ee80026
+      internalID: -943513778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7441cd3bfa77c4a8ca5ce318dc0d62
+      internalID: -1915923071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_17
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcbb7e4567acee4ea28bbe27a410ad8
+      internalID: -1079466836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d097f6d0c740f434c995502fe2c48106
+      internalID: -1240157113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_19
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c889ee1b10262064f83140a8f262c17b
+      internalID: 451846353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f99ef13e07c494dbd20c7348e7c74c
+      internalID: -1777368667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631d7d07158685c45a73921e767d1879
+      internalID: -106277591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_22
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756da0b6470d1a6498ab8e26a84f2b7f
+      internalID: -1885487912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_23
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8456d30ed487dd4389917f54f3aab92
+      internalID: 1536445079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55042e991fdae66439bfc2881a49678e
+      internalID: 873516982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_25
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb9068a45ce7b94ca5fb20903f8b601
+      internalID: 1180331419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_26
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d796cc042841be84991b3aef6629d162
+      internalID: 1693450152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_27
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6947658561fe845996f7d2de8f56f6
+      internalID: -1711463829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1477c43c8c2550645be3824a866b415f
+      internalID: -1757048948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b2d30a90b12ef439c9e45fc4bdb423
+      internalID: 793810282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07e21e31ba8a08478928447d187eb57
+      internalID: 182277168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b83443f8a23314897b5e05d786acd9
+      internalID: 54571717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01edb8f05e6956449845a9e85a26fd92
+      internalID: 1138037245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_33
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56bb05c8ddafbc41b70d892f2659198
+      internalID: -1577719432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd8ecaacfc104242bfa5f830dc9ce96
+      internalID: 189344302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_35
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a033542642ce9439aa1833320416fc
+      internalID: 287859104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2b3c716efbd814895adb16195efe1b
+      internalID: -1989753993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_37
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4145aecec8378dd4e9c68cc1b94ac898
+      internalID: 650479717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_38
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d778f543efa024846af4a2a9c2713708
+      internalID: 1348464789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_39
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204e01c498c54d64c91a3eb045f1248c
+      internalID: -1290599493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Labyrint_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a137e5fe8fe85504a8e5cdbac5645efd
+      internalID: 135485012
       vertices: []
       indices: 
       edges: []
@@ -413,7 +1018,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8364ec1dee7f77044950269f7382ddf2
     internalID: 0
     vertices: []
     indices: 
@@ -421,20 +1026,51 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Labyrint_0: -8559258754583456956
-      Labyrint_1: 2792947737622065361
-      Labyrint_10: -5953292771077458743
-      Labyrint_11: -4034702467102545031
-      Labyrint_2: -8863839582233388359
-      Labyrint_3: -3559258735137224761
-      Labyrint_4: -1294922783938380142
-      Labyrint_5: 4049473019191424975
-      Labyrint_6: -8885632863574727223
-      Labyrint_7: 3559716935395754143
-      Labyrint_8: 74602421324075341
-      Labyrint_9: 8387284933975094474
+      Labyrint_1: 337186376
+      Labyrint_10: -1484397393
+      Labyrint_11: 966829214
+      Labyrint_12: 1764108026
+      Labyrint_13: -88810325
+      Labyrint_14: -2138679964
+      Labyrint_15: -943513778
+      Labyrint_16: -1915923071
+      Labyrint_17: -1079466836
+      Labyrint_18: -1240157113
+      Labyrint_19: 451846353
+      Labyrint_2: -1961234315
+      Labyrint_20: -1777368667
+      Labyrint_21: -106277591
+      Labyrint_22: -1885487912
+      Labyrint_23: 1536445079
+      Labyrint_24: 873516982
+      Labyrint_25: 1180331419
+      Labyrint_26: 1693450152
+      Labyrint_27: -1711463829
+      Labyrint_28: -1757048948
+      Labyrint_29: 793810282
+      Labyrint_3: -409600839
+      Labyrint_30: 182277168
+      Labyrint_31: 54571717
+      Labyrint_32: 1138037245
+      Labyrint_33: -1577719432
+      Labyrint_34: 189344302
+      Labyrint_35: 287859104
+      Labyrint_36: -1989753993
+      Labyrint_37: 650479717
+      Labyrint_38: 1348464789
+      Labyrint_39: -1290599493
+      Labyrint_4: -2115890345
+      Labyrint_40: 135485012
+      Labyrint_5: -1928601288
+      Labyrint_6: 1999882455
+      Labyrint_7: 1813332376
+      Labyrint_8: 2118838466
+      Labyrint_9: 415615937
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
