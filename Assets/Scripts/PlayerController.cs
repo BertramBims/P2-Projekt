@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     public bool onBumpyRoad;
     public float bumpForce = 0.15f;
 
+    public bool onMudRoad;
+    public float mudSlowFactor = 0.0005f;
+
     private bool canPushPlayerMobility;
 
     private void Awake()
@@ -50,6 +53,12 @@ public class PlayerController : MonoBehaviour
             Vector2 bump = Random.insideUnitCircle * bumpForce;
             rb.linearVelocity *= 0.5f;
             rb.linearVelocity += bump;
+        }
+
+        if (onMudRoad && moveSpeed > 0f)
+        {
+            Debug.Log("Affected by Mud Road");
+            moveSpeed -= mudSlowFactor;
         }
     }
 

@@ -8,6 +8,7 @@ TagManager:
   - Mobility_Player
   - Car
   - BumpyRoad
+  - MudRoad
   layers:
   - Default
   - TransparentFX
