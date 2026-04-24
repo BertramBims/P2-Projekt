@@ -78889,6 +78889,7 @@ GameObject:
   - component: {fileID: 1786094822798808593}
   - component: {fileID: 4086030469243452978}
   - component: {fileID: 6203962395743709646}
+  - component: {fileID: 6203962395743709647}
   m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -79290,6 +79291,21 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 1fb5cc5fc4b697a4b9a2440599945c82, type: 2}
+--- !u!114 &6203962395743709647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850811080836876183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6377eade0cc2b69469049bda4dca7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraClamp
+  playerCam: {fileID: 3535919551217747900}
+  worldTileMap: {fileID: 1008875339}
+  player: {fileID: 1701644780532308789}
 --- !u!114 &6352685212792249512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79421,6 +79437,8 @@ MonoBehaviour:
   - {fileID: 1739466473}
   onBumpyRoad: 0
   bumpForce: 0.15
+  onMudRoad: 0
+  mudSlowFactor: 0.0005
 --- !u!114 &7694444038884036026
 MonoBehaviour:
   m_ObjectHideFlags: 0
