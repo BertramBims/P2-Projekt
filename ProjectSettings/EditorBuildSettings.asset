@@ -8,9 +8,24 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SerhatScene.unity
     guid: 42e9323e81075a94fb8a41921b23b758
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/eda.unity
     guid: 1b3183fa114c34d0aac28425e0075888
+  - enabled: 1
+    path: Assets/Scenes/eda_fixed.unity
+    guid: 0c0155b759d1e4b4cac1bd9daf30b008
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level2.unity
+    guid: 7604c3cd08e8216459f2af159c1a73cd
+  - enabled: 1
+    path: Assets/Scenes/EliasScene.unity
+    guid: 3fbb132271aa62d4fb3dc170677ed8c4
+  - enabled: 1
+    path: Assets/Scenes/adskillelse-level.unity
+    guid: 6c89ccdd7c14b426098faf1f636e951c
+  - enabled: 0
+    path: Assets/Scenes/FrejScene.unity
+    guid: edc18d541b00d044ab607c0dd5ef469a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
