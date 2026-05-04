@@ -699,7 +699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8011436211080500874, guid: 709a54e28c9a82743ba05a0ebc1cb6ff, type: 3}
       propertyPath: m_Name
-      value: Panel
+      value: PauseMenu
       objectReference: {fileID: 0}
     - target: {fileID: 8108030111771100768, guid: 709a54e28c9a82743ba05a0ebc1cb6ff, type: 3}
       propertyPath: m_Pivot.x

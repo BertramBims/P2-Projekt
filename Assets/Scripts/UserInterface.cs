@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class UserInterface : MonoBehaviour
@@ -8,9 +9,12 @@ public class UserInterface : MonoBehaviour
 
     void Update()
     {
-        if (pauseUI != null) return;
+        Debug.Log("ESC pressed");
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (pauseUI == null) return;
+        if (Keyboard.current == null) return;
+
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             if (isPaused)
                 Resume();
@@ -18,9 +22,10 @@ public class UserInterface : MonoBehaviour
                 Pause();
         }
     }
+
     public void Pause()
     {
-        if (pauseUI != null) return;
+        if (pauseUI == null) return;
 
         pauseUI.SetActive(true);
         Time.timeScale = 0f;
@@ -29,7 +34,7 @@ public class UserInterface : MonoBehaviour
 
     public void Resume()
     {
-        if (pauseUI != null) return;
+        if (pauseUI == null) return;
 
         pauseUI.SetActive(false);
         Time.timeScale = 1f;
