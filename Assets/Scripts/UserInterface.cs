@@ -1,20 +1,21 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UserInterface : MonoBehaviour
 {
     public GameObject pauseUI;
     public GameObject levelSelectUI;
-    public GameObject MainMenuUI;
+    public GameObject mainMenuUI;
     private bool isPaused = false;
-
-    // PAUSE
 
     private void Start()
     {
         if (levelSelectUI != null)
             levelSelectUI.SetActive(false);
+
+        AddButtonClickSound(mainMenuUI);
     }
 
     void Update()
@@ -41,6 +42,8 @@ public class UserInterface : MonoBehaviour
     }
 }
 
+    // PAUSE
+
     public void Pause()
     {
         if (pauseUI == null) return;
@@ -48,6 +51,7 @@ public class UserInterface : MonoBehaviour
         pauseUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        AddButtonClickSound(pauseUI);
     }
 
     public void Resume()
@@ -83,16 +87,19 @@ public class UserInterface : MonoBehaviour
     public void OpenLevelSelect()
     {
         if (levelSelectUI != null)
+        {
             levelSelectUI.SetActive(true);
+            AddButtonClickSound(levelSelectUI);
+        }
 
-        if (MainMenuUI != null)
-            MainMenuUI.SetActive(false);
+        if (mainMenuUI != null)
+            mainMenuUI.SetActive(false);
     }
 
     public void BackToMain()
     {
-        if (MainMenuUI != null)
-            MainMenuUI.SetActive(true);
+        if (mainMenuUI != null)
+            mainMenuUI.SetActive(true);
     }
 
     public void CloseLevelSelect()
@@ -105,4 +112,24 @@ public class UserInterface : MonoBehaviour
     {
         Application.Quit();
     }
+
+    // BUTTONSOUND
+
+    void PlayButtonSound()
+    {
+        SoundManager.instance.PlaySound(Soundtype.Button);
+    }
+
+    void AddButtonClickSound(GameObject ui)
+    {
+        if (ui == null) return;
+
+        Button[] buttons = ui.GetComponentsInChildren<Button>(true);
+
+        foreach (Button btn in buttons)
+        {
+            btn.onClick.AddListener(PlayButtonSound);
+        }
+    }
 }
+    

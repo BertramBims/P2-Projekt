@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f9787495d22816f4893045842a2ee628
+guid: a1cd1a01a9863f54099deec0f4b60f07
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1575791450092649876
-    second: dialog box medium-sheet_0
+      213: -7443756053782179069
+    second: background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dialog box medium-sheet_0
+      name: background_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 4
-        width: 122
-        height: 41
+        x: 0
+        y: 0
+        width: 81
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c624129660aa12ae0800000000000000
-      internalID: -1575791450092649876
+      spriteID: 30356abce4772b890800000000000000
+      internalID: -7443756053782179069
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dialog box medium-sheet_0: -1575791450092649876
+      background_0: -7443756053782179069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

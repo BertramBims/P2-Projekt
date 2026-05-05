@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 55b2a49c78b1ccb468e31cdd04b02058
+  - enabled: 1
+    path: Assets/Scenes/SERHAT TEST.unity
+    guid: ba51789223b09d84d90d1ff1c410245d
   - enabled: 0
     path: Assets/Scenes/SerhatScene.unity
     guid: 42e9323e81075a94fb8a41921b23b758
@@ -29,9 +32,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/FrejScene.unity
     guid: edc18d541b00d044ab607c0dd5ef469a
-  - enabled: 1
-    path: Assets/Scenes/SERHAT TEST.unity
-    guid: ba51789223b09d84d90d1ff1c410245d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
