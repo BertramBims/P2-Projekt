@@ -329,13 +329,21 @@ PrefabInstance:
       value: SpawnPoint_Lane3
       objectReference: {fileID: 0}
     - target: {fileID: 5992342904101375405, guid: 6483117bade4e4ae1a54c82669fdc5ff, type: 3}
+      propertyPath: maxSpawnTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992342904101375405, guid: 6483117bade4e4ae1a54c82669fdc5ff, type: 3}
+      propertyPath: minSpawnTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992342904101375405, guid: 6483117bade4e4ae1a54c82669fdc5ff, type: 3}
       propertyPath: carPrefabs.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5992342904101375405, guid: 6483117bade4e4ae1a54c82669fdc5ff, type: 3}
       propertyPath: 'carPrefabs.Array.data[0]'
       value: 
-      objectReference: {fileID: 1292443566388642967, guid: a54880694a8734f17b1958f909d52e30, type: 3}
+      objectReference: {fileID: 1292443566388642967, guid: 7625d0caa1a7f4238984cda0a02737ae, type: 3}
     - target: {fileID: 6473310636690634794, guid: 6483117bade4e4ae1a54c82669fdc5ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.4438252
@@ -808,7 +816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &519420029
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1018,6 +1026,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2237197374480072231, guid: e3247dbb2ac7044e1aaee150b75481b1, type: 3}
   m_PrefabInstance: {fileID: 522352175146517939}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &552459085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3020881018817601482, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
+  m_PrefabInstance: {fileID: 2106434245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &552459090 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 94902758024749025, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
+  m_PrefabInstance: {fileID: 2106434245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &552459091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552459085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6377eade0cc2b69469049bda4dca7b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraClamp
+  playerCam: {fileID: 552459090}
+  worldTileMap: {fileID: 1284288251}
+  player: {fileID: 1997874250}
 --- !u!1 &578422900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,6 +1715,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7910729740229481660, guid: 2972f7107cd7f473f8f5679f17d5415d, type: 3}
+      propertyPath: maxSpawnTime
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910729740229481660, guid: 2972f7107cd7f473f8f5679f17d5415d, type: 3}
+      propertyPath: minSpawnTime
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910729740229481660, guid: 2972f7107cd7f473f8f5679f17d5415d, type: 3}
       propertyPath: carPrefabs.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1900,7 +1941,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80db12eb62cfa4c89b0adb86df4002f0, type: 2}
+  - {fileID: 2100000, guid: cb37bd6d8ce4d45e2b725dd269a268dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13329,6 +13370,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3496189922694842460, guid: 2972f7107cd7f473f8f5679f17d5415d, type: 3}
   m_PrefabInstance: {fileID: 781460393}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1997874250 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2872805624909054824, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
+  m_PrefabInstance: {fileID: 2106434245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2033165002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13361,6 +13407,14 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 1224310032}
+    - target: {fileID: 5992342904101375405, guid: 6483117bade4e4ae1a54c82669fdc5ff, type: 3}
+      propertyPath: maxSpawnTime
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992342904101375405, guid: 6483117bade4e4ae1a54c82669fdc5ff, type: 3}
+      propertyPath: minSpawnTime
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 5992342904101375405, guid: 6483117bade4e4ae1a54c82669fdc5ff, type: 3}
       propertyPath: carPrefabs.Array.size
       value: 1
@@ -13554,7 +13608,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3020881018817601482, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 552459091}
   m_SourcePrefab: {fileID: 100100000, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
 --- !u!4 &2110808755 stripped
 Transform:
