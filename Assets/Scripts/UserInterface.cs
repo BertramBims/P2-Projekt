@@ -9,8 +9,6 @@ public class UserInterface : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("ESC pressed");
-
         if (pauseUI == null) return;
         if (Keyboard.current == null) return;
 
