@@ -9296,6 +9296,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2802540655667654067, guid: 709a54e28c9a82743ba05a0ebc1cb6ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 856200433}
+    - target: {fileID: 2802540655667654067, guid: 709a54e28c9a82743ba05a0ebc1cb6ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343457842932994404, guid: 709a54e28c9a82743ba05a0ebc1cb6ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 856200433}
+    - target: {fileID: 3343457842932994404, guid: 709a54e28c9a82743ba05a0ebc1cb6ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 4257074247386572648, guid: 709a54e28c9a82743ba05a0ebc1cb6ff, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -9411,6 +9427,14 @@ PrefabInstance:
     - target: {fileID: 8108030111771100768, guid: 709a54e28c9a82743ba05a0ebc1cb6ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568628567190393648, guid: 709a54e28c9a82743ba05a0ebc1cb6ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 856200433}
+    - target: {fileID: 8568628567190393648, guid: 709a54e28c9a82743ba05a0ebc1cb6ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35383,7 +35407,7 @@ GameObject:
   - component: {fileID: 1650674977}
   - component: {fileID: 1650674976}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: PausePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
