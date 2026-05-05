@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public enum Soundtype
 {
-    Select,
+    Button,
     Deselect,
     Collision,
     Pickup
@@ -14,7 +14,7 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance;
 
-    public AudioSource selectUI;
+    public AudioSource ButtonFX;
     public AudioSource deselectUI;
     public AudioSource collisionBump;
     public AudioSource pickupSound;
@@ -68,19 +68,23 @@ public class SoundManager : MonoBehaviour
         switch (levelIndex) // 3 Ambient sounds for each level
         {
             case 0:
-                PlayAmbience(0, 1, 2); // Level 1
+                PlayAmbience(0, 1, 2); // Main Menu
                 break;
 
             case 1:
-                PlayAmbience(3, 4, 5); // Level 2
+                PlayAmbience(3, 4, 5); // Level 1
                 break;
 
             case 2:
-                PlayAmbience(6, 7, 8); // Level 3
+                PlayAmbience(6, 7, 8); // Level 2
                 break;
 
             case 3:
-                PlayAmbience(9, 10, 11); // Level 4
+                PlayAmbience(9, 10, 11); // Level 3
+                break;
+
+            case 4:
+                PlayAmbience(12, 13, 14); // Level 4
                 break;
 
             default:
@@ -122,9 +126,9 @@ public class SoundManager : MonoBehaviour
     {
         switch (type)
         {
-            case Soundtype.Select:
-                if (selectUI != null)
-                    selectUI.PlayOneShot(selectUI.clip);
+            case Soundtype.Button:
+                if (ButtonFX != null)
+                    ButtonFX.PlayOneShot(ButtonFX.clip);
                 break;
 
             case Soundtype.Deselect:
