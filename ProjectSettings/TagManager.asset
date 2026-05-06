@@ -9,6 +9,7 @@ TagManager:
   - Car
   - BumpyRoad
   - MudRoad
+  - Blind
   layers:
   - Default
   - TransparentFX
@@ -54,6 +55,9 @@ TagManager:
     locked: 0
   - name: BlindPlayer
     uniqueID: 3257082505
+    locked: 0
+  - name: UI
+    uniqueID: 403563117
     locked: 0
   m_RenderingLayers:
   - Default

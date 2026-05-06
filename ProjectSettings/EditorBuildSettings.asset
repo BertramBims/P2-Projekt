@@ -5,6 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 55b2a49c78b1ccb468e31cdd04b02058
+  - enabled: 1
+    path: Assets/Scenes/SERHAT TEST.unity
+    guid: ba51789223b09d84d90d1ff1c410245d
   - enabled: 0
     path: Assets/Scenes/SerhatScene.unity
     guid: 42e9323e81075a94fb8a41921b23b758

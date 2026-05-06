@@ -1,7 +1,6 @@
-using System.Collections.Generic;
+using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.Playables;
 
 namespace AYellowpaper.SerializedCollections
@@ -13,8 +12,15 @@ namespace AYellowpaper.SerializedCollections
 
         public GameObject textHolder;
         public TMP_Text text;
+        public float typingSpeed = 0.05f;
+
+        public AudioSource audioSource;
+        public AudioClip typeSound;
 
         public PlayableDirector playableDirector;
+
+        private Coroutine currentRoutine;
+        private bool isTyping = false;
 
         private void Start()
         {
@@ -24,17 +30,46 @@ namespace AYellowpaper.SerializedCollections
             }
         }
 
+        /*private void Update()
+        {
+            if (isTyping && //input to continue)
+        }*/
+
         public void ShowText(string key)
         {
             if (textEntries.TryGetValue(key, out string entry))
             {
-                textHolder.SetActive(false);
-                text.text = entry;
-                textHolder.SetActive(true);
+                if(currentRoutine != null)
+                {
+                    StopCoroutine(currentRoutine);
+                }
+
+                currentRoutine = StartCoroutine(PlayText(entry));
             } else
             {
                 Debug.LogWarning($"No text entry found for key: {key}");
             }
+        }
+
+        IEnumerator PlayText (string textEntry)
+        {
+            textHolder.SetActive(true);
+            text.text = "";
+            isTyping = true;
+
+            foreach (char c in textEntry)
+            {
+                text.text += c;
+
+                if (typeSound != null)
+                {
+                    audioSource.PlayOneShot(typeSound);
+                }
+
+                yield return new WaitForSeconds(typingSpeed);
+            }
+
+            isTyping = false;
         }
     }
 }
