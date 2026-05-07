@@ -100,6 +100,9 @@ public class UserInterface : MonoBehaviour
     {
         if (mainMenuUI != null)
             mainMenuUI.SetActive(true);
+
+        if (levelSelectUI != null)
+            levelSelectUI.SetActive(false);
     }
 
     public void CloseLevelSelect()

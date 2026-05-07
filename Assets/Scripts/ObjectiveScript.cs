@@ -14,6 +14,8 @@ namespace AYellowpaper.SerializedCollections
         public TMP_Text text;
         public int currentObjective;
 
+        [SerializeField] public GameObject keyHeldIndicator;
+
         public void PlayNextObjective()
         {
             currentObjective++;
@@ -32,6 +34,14 @@ namespace AYellowpaper.SerializedCollections
             else
             {
                 Debug.LogWarning($"No text entry found for key: {key}");
+            }
+        }
+
+        public void ShowKeyHeld()
+        {
+            if (keyHeldIndicator != null)
+            {
+                keyHeldIndicator.SetActive(true);
             }
         }
     }

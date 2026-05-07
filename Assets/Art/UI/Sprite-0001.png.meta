@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 2b43c9721c4312f4f90d389d8f80affd
+guid: b043af0c7bbf54f4ab22455787773ff4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4935343338000462903
-    second: dialog box medium_0
+      213: -6007857137893288414
+    second: Sprite-0001_0
+  - first:
+      213: 4245052342988409972
+    second: Sprite-0001_1
+  - first:
+      213: -7732569738864306783
+    second: Sprite-0001_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dialog box medium_0
+      name: Sprite-0001_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 4
-        width: 122
-        height: 41
+        x: 0
+        y: 0
+        width: 32
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 734bb1a0e9cdd7440800000000000000
-      internalID: 4935343338000462903
+      spriteID: 226539a93cdcf9ca0800000000000000
+      internalID: -6007857137893288414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0001_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c83cc5d9479ea30800000000000000
+      internalID: 4245052342988409972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0001_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5de0a9ac460b490800000000000000
+      internalID: -7732569738864306783
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 42f4870e09882ef4bb3c86cb9193b4c1
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +196,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      dialog box medium_0: 4935343338000462903
+      Sprite-0001_0: -6007857137893288414
+      Sprite-0001_1: 4245052342988409972
+      Sprite-0001_2: -7732569738864306783
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
