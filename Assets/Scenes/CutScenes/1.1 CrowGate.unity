@@ -9491,6 +9491,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: e97533bd637074d9c8911d41f3b8faa8, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: e97533bd637074d9c8911d41f3b8faa8, type: 3}
       propertyPath: m_SortingLayerID
       value: 1684967629
       objectReference: {fileID: 0}
@@ -76473,6 +76477,7 @@ MonoBehaviour:
     _serializedList: []
   text: {fileID: 0}
   currentObjective: 0
+  keyHeldIndicator: {fileID: 0}
 --- !u!114 &1904619672
 MonoBehaviour:
   m_ObjectHideFlags: 0
