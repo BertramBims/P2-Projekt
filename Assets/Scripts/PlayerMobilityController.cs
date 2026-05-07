@@ -13,6 +13,12 @@ public class PlayerMobilityController : MonoBehaviour
     private float leftInput;
     private float rightInput;
 
+    public bool onBumpyRoad;
+    public float bumpForce = 0.15f;
+
+    public bool onMudRoad;
+    public float mudSlowFactor = 0.0005f;
+
     private Rigidbody2D rb;
     private Animator animator;
 
