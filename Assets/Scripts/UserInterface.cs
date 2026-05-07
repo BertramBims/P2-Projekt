@@ -131,6 +131,7 @@ public class UserInterface : MonoBehaviour
 
         foreach (Button btn in buttons)
         {
+            btn.onClick.RemoveListener(PlayButtonSound);
             btn.onClick.AddListener(PlayButtonSound);
         }
     }
