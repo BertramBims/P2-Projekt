@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db4c44bb54e906c48aeac02fa06abd67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
-  selectUI: {fileID: 7495444854210081132}
+  ButtonFX: {fileID: 7495444854210081132}
   deselectUI: {fileID: 6858632380933442909}
   collisionBump: {fileID: 1962602756741997966}
   pickupSound: {fileID: 5932061163990039488}
@@ -319,6 +319,9 @@ MonoBehaviour:
   ambience2: {fileID: 8621197432152616041}
   ambience3: {fileID: 9186995731095956087}
   ambienceClips:
+  - {fileID: 8300000, guid: 249e9fc01c38e4342a900961d0c7dae9, type: 3}
+  - {fileID: 8300000, guid: fd5160c391e0c874b9bce4202256b2d1, type: 3}
+  - {fileID: 0}
   - {fileID: 8300000, guid: 249e9fc01c38e4342a900961d0c7dae9, type: 3}
   - {fileID: 8300000, guid: fd5160c391e0c874b9bce4202256b2d1, type: 3}
   - {fileID: 0}
@@ -332,6 +335,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   musicClips:
+  - {fileID: 0}
   - {fileID: 8300000, guid: 68d77a1baa8fd6f46849ea50fe5878e1, type: 3}
   - {fileID: 0}
   - {fileID: 0}
@@ -605,7 +609,7 @@ GameObject:
   - component: {fileID: 2813876041893163357}
   - component: {fileID: 7495444854210081132}
   m_Layer: 0
-  m_Name: SelectUI
+  m_Name: ButtonFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -637,9 +641,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: e17cb81101cb0d64685da993f074755e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
