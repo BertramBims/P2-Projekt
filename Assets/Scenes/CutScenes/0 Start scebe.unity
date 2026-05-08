@@ -1137,7 +1137,7 @@ MonoBehaviour:
   text: {fileID: 959149875}
   typeSound: {fileID: 0}
   audioSource: {fileID: 0}
-  textEntry: "Anyway, let\u2019s go find him before we miss the concert! "
+  textEntry: "Anyway, let\u2019s go find him! "
 --- !u!114 &959149875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Anyway, let\u2019s go find him before we miss the concert!\n"
+  m_text: "Anyway, let\u2019s go find him!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b485ab16c665e4d4aa15d251958659a4, type: 2}
   m_sharedMaterial: {fileID: -2923089583743655390, guid: b485ab16c665e4d4aa15d251958659a4, type: 2}
