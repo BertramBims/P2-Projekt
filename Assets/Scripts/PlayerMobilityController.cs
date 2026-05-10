@@ -20,7 +20,7 @@ public class PlayerMobilityController : MonoBehaviour
     public float mudSlowFactor = 0.0005f;
 
     private Rigidbody2D rb;
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
     private float forward;
     public GameObject playerVisual;
@@ -34,7 +34,6 @@ public class PlayerMobilityController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponentInChildren<Animator>();
     }
 
     public void OnLeftWheel(InputAction.CallbackContext ctx)
@@ -59,12 +58,12 @@ public class PlayerMobilityController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!beingPushed && !debugMovementBool)
+        if (!beingPushed)
         {
             HandleMovement();
             HandleAnimation();
             GetComponent<BoxCollider2D>().enabled = true;
-        } else if (beingPushed && debugMovementBool)
+        } else if (beingPushed)
         {
             Debug.Log("Overriding");
             OverrideAnimation();

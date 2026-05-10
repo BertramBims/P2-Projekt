@@ -11,6 +11,12 @@ public class CutsceneTrigger : MonoBehaviour
     public string playerTag = "Player";
 
     private bool hasPlayed = false;
+    [SerializeField] private bool enableCameraOnTrigger;
+
+    public Camera playerVisualCamera;
+    public Camera playerMobilityCamera;
+
+    public GameObject nextTriggerToEnable;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,6 +25,14 @@ public class CutsceneTrigger : MonoBehaviour
 
         if (collision.CompareTag(playerTag))
         {
+            if (enableCameraOnTrigger)
+            {
+                playerVisualCamera.gameObject.SetActive(true);
+                playerMobilityCamera.gameObject.SetActive(true);
+            }
+
+            if(nextTriggerToEnable != null)
+                nextTriggerToEnable.SetActive(true);
             PlayCutscene();
         }
     }
@@ -27,7 +41,6 @@ public class CutsceneTrigger : MonoBehaviour
     {
         if (cutscene == null)
         {
-            Debug.LogWarning("No PlayableDirector assigned!");
             return;
         }
 
