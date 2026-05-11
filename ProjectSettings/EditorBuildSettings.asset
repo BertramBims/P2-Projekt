@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/CutScenes/Copies/Copy_1 LockedGate.unity
+    guid: 4556205a4cbbcfe4eae845def63c8455
+  - enabled: 1
     path: Assets/Scenes/CutScenes/1 LockedGate.unity
     guid: 1166ec04c12ae4535b77e9ca7010df6e
   - enabled: 1
