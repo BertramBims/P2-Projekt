@@ -68,7 +68,7 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0625, y: -0.09375, z: 0}
+    m_Center: {x: -0.0625, y: 0.40625, z: 0}
     m_Extent: {x: 0.6875, y: 0.90625, z: 0}
   m_PointLightInnerAngle: 127.74202
   m_PointLightOuterAngle: 360
@@ -538,7 +538,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 4
   moveInput: {x: 0, y: 0}
-  playerMobilityPositionTarget: {fileID: 0}
+  pushedMovementSpots: []
+  onBumpyRoad: 0
+  bumpForce: 0.15
+  onMudRoad: 0
+  mudSlowFactor: 0.0005
 --- !u!50 &4847348294428909332
 Rigidbody2D:
   serializedVersion: 5
@@ -600,7 +604,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.53050005}
+  m_Offset: {x: -0.000000014901161, y: -0.08048786}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -610,7 +614,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.66310406, y: 0.3224938}
+  m_Size: {x: 0.6146722, y: 0.21352229}
   m_EdgeRadius: 0
 --- !u!114 &6718732289684283559
 MonoBehaviour:
