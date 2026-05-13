@@ -17,7 +17,7 @@ public class PlayerJoinManager : MonoBehaviour
             AssignNextPlayer(device);
         });
     }
-
+                                
     void AssignNextPlayer(InputDevice device)
     {
         if (player1.devices.Count == 0)
