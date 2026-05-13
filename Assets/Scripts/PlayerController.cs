@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
         HandleAnimation();
 
         if (playerMobility != null &&
-            playerMobility.GetComponent<PlayerMobilityController>().beingPushed)
+            playerMobility.GetComponent<PlayerMobilityController>().beingPushed || playerMobility.GetComponent<PlayerMobilityController>().alwaysPushedInThisScene)
         {
             PushedAnimator();
         }

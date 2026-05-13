@@ -21,7 +21,8 @@ public class Car : MonoBehaviour
     // Mirror sprite when moving in direction 1 (right)
     if (spriteRenderer != null)
     {
-        spriteRenderer.flipX = (direction == 1);
+        visual.localScale = new Vector3(direction == 1 ? -1 : 1, 1, 1);
+        //spriteRenderer.flipX = direction == 1; // Flip sprite when moving right
     }
 
     if (Mathf.Abs(transform.position.x) > 10f)

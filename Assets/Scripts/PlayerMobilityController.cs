@@ -9,6 +9,7 @@ public class PlayerMobilityController : MonoBehaviour
     public float rotationSpeed = 200f;
 
     public bool beingPushed = false;
+    public bool alwaysPushedInThisScene = false;
 
     private float leftInput;
     private float rightInput;
@@ -58,19 +59,31 @@ public class PlayerMobilityController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!beingPushed)
-        {
-            HandleMovement();
-            HandleAnimation();
-            GetComponent<BoxCollider2D>().enabled = true;
-        } else if (beingPushed)
+        if (alwaysPushedInThisScene)
         {
             Debug.Log("Overriding");
             OverrideAnimation();
             //transform.position = playerVisual.GetComponent<PlayerController>().playerMobilityPositionTarget.position;
             transform.position = playerVisual.GetComponent<PlayerController>().pushedMovementSpots[beingPushedMovementSpot - 1].transform.position;
             GetComponent<BoxCollider2D>().enabled = false;
+        } else
+        {
+            if (!beingPushed)
+            {
+                HandleMovement();
+                HandleAnimation();
+                GetComponent<BoxCollider2D>().enabled = true;
+            }
+            else if (beingPushed)
+            {
+                Debug.Log("Overriding");
+                OverrideAnimation();
+                //transform.position = playerVisual.GetComponent<PlayerController>().playerMobilityPositionTarget.position;
+                transform.position = playerVisual.GetComponent<PlayerController>().pushedMovementSpots[beingPushedMovementSpot - 1].transform.position;
+                GetComponent<BoxCollider2D>().enabled = false;
+            }
         }
+        
     }
 
     private void LateUpdate()

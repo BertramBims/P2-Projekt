@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5691453184585581585}
   - component: {fileID: -7745587745519829009}
   - component: {fileID: -5276130060115552624}
-  - component: {fileID: 2057599010495350815}
   m_Layer: 0
   m_Name: car_2_0
   m_TagString: Car
@@ -96,63 +95,6 @@ MonoBehaviour:
   speed: 5
   direction: 1
   visual: {fileID: 3066824211318564264}
---- !u!60 &2057599010495350815
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452783650986562720}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.9328818, y: 0.3791349}
-      - {x: 1.2948505, y: 0.93269634}
-      - {x: -0.28599587, y: 0.9357892}
-      - {x: -0.5996235, y: 0.5667345}
-      - {x: -1.3677189, y: 0.5636801}
-      - {x: -1.9390281, y: 0.30791947}
-      - {x: -1.9395417, y: -0.60406834}
-      - {x: -1.6089731, y: -0.8739929}
-      - {x: 1.5621157, y: -0.8718071}
-      - {x: 1.935069, y: -0.5695655}
-  m_UseDelaunayMesh: 1
 --- !u!1 &7912885865222947327
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,9 +105,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3066824211318564264}
   - component: {fileID: 8410357354865126692}
+  - component: {fileID: 1191819101894327870}
   m_Layer: 0
   m_Name: VisualBlue
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,3 +187,60 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!60 &1191819101894327870
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7912885865222947327}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 2}
+    newSize: {x: 1.8125, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.9328818, y: 0.3791349}
+      - {x: 1.7211938, y: 0.5063529}
+      - {x: -0.25819087, y: 0.57432413}
+      - {x: -0.5996235, y: 0.5667345}
+      - {x: -1.3677189, y: 0.5636801}
+      - {x: -1.9390281, y: 0.30791947}
+      - {x: -1.9395417, y: -0.60406834}
+      - {x: -1.6089731, y: -0.8739929}
+      - {x: 1.5621157, y: -0.8718071}
+      - {x: 1.935069, y: -0.5695655}
+  m_UseDelaunayMesh: 1

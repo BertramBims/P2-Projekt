@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -18,6 +19,10 @@ public class CutsceneTrigger : MonoBehaviour
 
     public GameObject nextTriggerToEnable;
 
+    [Header("Optional Objects to Disable or Enable...")]
+    public GameObject[] objectsToEnable;
+    public GameObject[] objectsToDisable; 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!playOnEnter) return;
@@ -32,7 +37,10 @@ public class CutsceneTrigger : MonoBehaviour
             }
 
             if(nextTriggerToEnable != null)
+            {
                 nextTriggerToEnable.SetActive(true);
+                Debug.Log(nextTriggerToEnable.name + " should be enabled now");
+            }
             PlayCutscene();
         }
     }
@@ -44,7 +52,30 @@ public class CutsceneTrigger : MonoBehaviour
             return;
         }
 
+        Debug.Log("should play " + cutscene.name);
         cutscene.Play();
         hasPlayed = true;
+    }
+
+    public void DisableObjects()
+    {
+        if (objectsToDisable.Length == 0)
+            return;
+
+        for (int i = 0; i < objectsToDisable.Length; i++)
+        {
+            objectsToDisable[i].SetActive(false);
+        }
+    }
+
+    public void EnableObjects()
+    {
+        if (objectsToEnable.Length == 0)
+            return;
+
+        for (int i = 0; i < objectsToEnable.Length; i++)
+        {
+            objectsToEnable[i].SetActive(true);
+        }
     }
 }

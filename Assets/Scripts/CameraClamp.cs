@@ -23,7 +23,6 @@ public class CameraClamp : MonoBehaviour
         // Clamp the target position to stay within bounds
         targetPos.x = Mathf.Clamp(targetPos.x, cameraBounds.min.x + halfWidth, cameraBounds.max.x - halfWidth);
         targetPos.y = Mathf.Clamp(targetPos.y, cameraBounds.min.y + halfHeight, cameraBounds.max.y - halfHeight);
-        Debug.Log($"Camera Bounds: {cameraBounds.min.x}, {cameraBounds.min.y} to {cameraBounds.max.x}, {cameraBounds.max.y}");
         // Apply the target position
         playerCam.transform.position = targetPos;
     }
