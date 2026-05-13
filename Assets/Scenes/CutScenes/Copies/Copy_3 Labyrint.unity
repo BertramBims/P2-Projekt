@@ -63584,7 +63584,7 @@ Transform:
   m_GameObject: {fileID: 8397466364402948744}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -64237,9 +64237,10 @@ GameObject:
   - component: {fileID: 1087174780}
   - component: {fileID: 1087174789}
   - component: {fileID: 1087174797}
+  - component: {fileID: 8288320961673135946}
   m_Layer: 0
   m_Name: Player_Visual
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64259,6 +64260,7 @@ GameObject:
   - component: {fileID: 5166639104993342144}
   - component: {fileID: 4725585374251381298}
   - component: {fileID: 291175954}
+  - component: {fileID: 8790791077887716253}
   m_Layer: 0
   m_Name: Player_Mobility
   m_TagString: Mobility_Player
@@ -64718,6 +64720,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &8288320961673135946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368554493508877050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26c489042b211945897efebe7600d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerReconnectUI
+  reconnectUI: {fileID: 441736680}
 --- !u!1 &8397466364402948744
 GameObject:
   m_ObjectHideFlags: 0
@@ -64837,6 +64852,19 @@ MonoBehaviour:
   cameraTransform: {fileID: 2154031291387230635}
   beingPushedMovementSpot: 0
   debugMovementBool: 0
+--- !u!114 &8790791077887716253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5731291562746447213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26c489042b211945897efebe7600d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerReconnectUI
+  reconnectUI: {fileID: 742088097}
 --- !u!4 &9077271106065400349
 Transform:
   m_ObjectHideFlags: 0
@@ -64969,6 +64997,6 @@ SceneRoots:
   - {fileID: 292949567}
   - {fileID: 626613779}
   - {fileID: 374521830}
-  - {fileID: 742088101}
   - {fileID: 441736684}
+  - {fileID: 742088101}
   - {fileID: 860436050}
