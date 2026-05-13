@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     [SerializeField] private Animator animator;
-    private GameObject playerMobility;
+    [SerializeField] private GameObject playerMobility;
     //public Transform playerMobilityPositionTarget;
 
     private bool canPushPlayerMobility;

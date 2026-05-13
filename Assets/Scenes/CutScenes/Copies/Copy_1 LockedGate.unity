@@ -46554,6 +46554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sceneloader
   sceneToLoad: Copy_2 Busstopsted
+  loadOnCollision: 0
 --- !u!1 &1141889523
 GameObject:
   m_ObjectHideFlags: 0
@@ -92989,6 +92990,7 @@ MonoBehaviour:
   moveSpeed: 4
   moveInput: {x: 0, y: 0}
   animator: {fileID: 6707593467038469921}
+  playerMobility: {fileID: 5731291562746447213}
   pushedMovementSpots:
   - {fileID: 6384640389961468801}
   - {fileID: 1375409443}

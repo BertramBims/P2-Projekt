@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 72453108}
   - component: {fileID: 72453107}
   m_Layer: 0
-  m_Name: Main Camera (1)
+  m_Name: Main Camera_Mobility
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1360,6 +1360,110 @@ RectTransform:
   m_AnchoredPosition: {x: 17.7, y: -3.689998}
   m_SizeDelta: {x: 7.0293, y: 2.9937}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &145675753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 145675757}
+  - component: {fileID: 145675756}
+  - component: {fileID: 145675755}
+  - component: {fileID: 145675754}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &145675754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145675753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3f4aee8cf833c947a1df5e40d553001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerJoinManager
+  player1: {fileID: 6718732291471409762}
+  player2: {fileID: 5166639105557342596}
+--- !u!114 &145675755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145675753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b25a00769d4d9c4badc4ee792a22027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisplayManager
+--- !u!114 &145675756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145675753}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInputManager
+  m_NotificationBehavior: 0
+  m_MaxPlayerCount: 2
+  m_AllowJoining: 0
+  m_JoinBehavior: 0
+  m_PlayerJoinedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_PlayerLeftEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_JoinAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: cac79f22-3acd-4589-9c96-c6412183f8c4
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_PlayerPrefab: {fileID: 8846154100389716647, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
+  m_SplitScreen: 0
+  m_MaintainAspectRatioInSplitScreen: 0
+  m_FixedNumberOfSplitScreens: -1
+  m_SplitScreenRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!4 &145675757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145675753}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.9, y: -0.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &152122359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,6 +1662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sceneloader
   sceneToLoad: Copy_3 Labyrint
+  loadOnCollision: 0
 --- !u!114 &184847718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2473,7 +2578,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Main Camera_Visual
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15012,7 +15117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &646067016873297066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15924,6 +16029,7 @@ MonoBehaviour:
   moveSpeed: 4
   moveInput: {x: 0, y: 0}
   animator: {fileID: 7878235211022398905}
+  playerMobility: {fileID: 5731291563373633065}
   pushedMovementSpots: []
   onBumpyRoad: 0
   bumpForce: 0.15
@@ -16457,6 +16563,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 72453110}
+  - {fileID: 145675757}
   - {fileID: 184847723}
   - {fileID: 196439085}
   - {fileID: 619394802}
@@ -16467,5 +16574,5 @@ SceneRoots:
   - {fileID: 231024488}
   - {fileID: 634227613}
   - {fileID: 546311109}
-  - {fileID: 1559589052}
   - {fileID: 1517787810}
+  - {fileID: 1559589052}

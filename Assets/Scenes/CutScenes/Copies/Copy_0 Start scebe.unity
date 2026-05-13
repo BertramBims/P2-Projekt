@@ -1378,6 +1378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sceneloader
   sceneToLoad: Copy_1 LockedGate
+  loadOnCollision: 0
 --- !u!114 &437919228
 MonoBehaviour:
   m_ObjectHideFlags: 0
