@@ -15671,7 +15671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSetup
   goToSpawn: 0
-  cinematicCamera: {fileID: 519420031}
+  cinematicCamera: {fileID: 72453109}
 --- !u!50 &4847348293044960721
 Rigidbody2D:
   serializedVersion: 5
@@ -15941,7 +15941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e88d029aa4998c419dba90cf664b40f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSetup
-  goToSpawn: 1
+  goToSpawn: 0
   cinematicCamera: {fileID: 519420031}
 --- !u!114 &6718732291471409762
 MonoBehaviour:
@@ -16307,6 +16307,7 @@ MonoBehaviour:
   moveSpeed: 2
   rotationSpeed: 100
   beingPushed: 0
+  alwaysPushedInThisScene: 0
   onBumpyRoad: 0
   bumpForce: 0.15
   onMudRoad: 0

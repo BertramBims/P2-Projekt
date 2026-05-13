@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CutScenes/Copies/Copy_3 Labyrint.unity
     guid: 61c01124c969d3b4582612f9a86e13a6
+  - enabled: 1
+    path: Assets/Scenes/CutScenes/Copies/Copy_4 Vejen.unity
+    guid: ebb32180364feb54c8d3eb5a6d31c288
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
