@@ -5,6 +5,8 @@ public class PlayerSetup : MonoBehaviour
 {
     public bool goToSpawn;
 
+    public Camera cinematicCamera;
+
     void Start()
     {
         AssignCamera();
@@ -22,6 +24,7 @@ public class PlayerSetup : MonoBehaviour
 
         int playerIndex = GetComponent<PlayerInput>().playerIndex;
         cam.targetDisplay = playerIndex;
+        cinematicCamera.targetDisplay = playerIndex;
 
         if (goToSpawn) transform.position = GameObject.Find("startPosition").transform.position;
         Debug.Log("Assigned camera to display: " + playerIndex);

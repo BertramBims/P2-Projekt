@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastMove;
 
     private Rigidbody2D rb;
-    private Animator animator;
+    [SerializeField] private Animator animator;
     private GameObject playerMobility;
     //public Transform playerMobilityPositionTarget;
 
@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -35,7 +34,7 @@ public class PlayerController : MonoBehaviour
         HandleAnimation();
 
         if (playerMobility != null &&
-            playerMobility.GetComponent<PlayerMobilityController>().beingPushed)
+            playerMobility.GetComponent<PlayerMobilityController>().beingPushed || playerMobility.GetComponent<PlayerMobilityController>().alwaysPushedInThisScene)
         {
             PushedAnimator();
         }
@@ -88,7 +87,6 @@ public class PlayerController : MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext ctx)
     {
-
         if (ctx.performed)
         {
             if (playerMobility.GetComponent<PlayerMobilityController>().beingPushed == true)

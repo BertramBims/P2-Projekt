@@ -9,6 +9,7 @@ public class PlayerMobilityController : MonoBehaviour
     public float rotationSpeed = 200f;
 
     public bool beingPushed = false;
+    public bool alwaysPushedInThisScene = false;
 
     private float leftInput;
     private float rightInput;
@@ -20,7 +21,7 @@ public class PlayerMobilityController : MonoBehaviour
     public float mudSlowFactor = 0.0005f;
 
     private Rigidbody2D rb;
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
     private float forward;
     public GameObject playerVisual;
@@ -34,7 +35,6 @@ public class PlayerMobilityController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponentInChildren<Animator>();
     }
 
     public void OnLeftWheel(InputAction.CallbackContext ctx)
@@ -59,19 +59,31 @@ public class PlayerMobilityController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!beingPushed && !debugMovementBool)
-        {
-            HandleMovement();
-            HandleAnimation();
-            GetComponent<BoxCollider2D>().enabled = true;
-        } else if (beingPushed && debugMovementBool)
+        if (alwaysPushedInThisScene)
         {
             Debug.Log("Overriding");
             OverrideAnimation();
             //transform.position = playerVisual.GetComponent<PlayerController>().playerMobilityPositionTarget.position;
             transform.position = playerVisual.GetComponent<PlayerController>().pushedMovementSpots[beingPushedMovementSpot - 1].transform.position;
             GetComponent<BoxCollider2D>().enabled = false;
+        } else
+        {
+            if (!beingPushed)
+            {
+                HandleMovement();
+                HandleAnimation();
+                GetComponent<BoxCollider2D>().enabled = true;
+            }
+            else if (beingPushed)
+            {
+                Debug.Log("Overriding");
+                OverrideAnimation();
+                //transform.position = playerVisual.GetComponent<PlayerController>().playerMobilityPositionTarget.position;
+                transform.position = playerVisual.GetComponent<PlayerController>().pushedMovementSpots[beingPushedMovementSpot - 1].transform.position;
+                GetComponent<BoxCollider2D>().enabled = false;
+            }
         }
+        
     }
 
     private void LateUpdate()

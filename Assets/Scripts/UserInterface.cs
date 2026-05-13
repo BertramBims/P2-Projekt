@@ -81,7 +81,7 @@ public class UserInterface : MonoBehaviour
     public void StartGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("SERHAT TEST");
+        SceneManager.LoadScene("Copy_0 Start scebe");
     }
 
     public void OpenLevelSelect()
