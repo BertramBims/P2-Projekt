@@ -63263,6 +63263,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 580632295081641488, guid: e55eb27dc7e11344fa92e44010b88478, type: 3}
+      propertyPath: 'ambienceClips.Array.data[12]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 806ed38f5d4c06147bf86dd82ec7397b, type: 3}
+    - target: {fileID: 580632295081641488, guid: e55eb27dc7e11344fa92e44010b88478, type: 3}
+      propertyPath: 'ambienceClips.Array.data[13]'
+      value: 
+      objectReference: {fileID: 8300000, guid: fd5160c391e0c874b9bce4202256b2d1, type: 3}
     - target: {fileID: 2086261377899494324, guid: e55eb27dc7e11344fa92e44010b88478, type: 3}
       propertyPath: m_Name
       value: SoundManager

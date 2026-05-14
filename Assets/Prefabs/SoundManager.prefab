@@ -319,14 +319,20 @@ MonoBehaviour:
   ambience2: {fileID: 8621197432152616041}
   ambience3: {fileID: 9186995731095956087}
   ambienceClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 8300000, guid: 249e9fc01c38e4342a900961d0c7dae9, type: 3}
   - {fileID: 8300000, guid: fd5160c391e0c874b9bce4202256b2d1, type: 3}
   - {fileID: 0}
-  - {fileID: 8300000, guid: 249e9fc01c38e4342a900961d0c7dae9, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 8300000, guid: fd5160c391e0c874b9bce4202256b2d1, type: 3}
-  - {fileID: 8300000, guid: d70500a7fdb605d48852e7f60e57e9ae, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 806ed38f5d4c06147bf86dd82ec7397b, type: 3}
   - {fileID: 0}
   - {fileID: 8300000, guid: d70500a7fdb605d48852e7f60e57e9ae, type: 3}
   - {fileID: 0}
@@ -336,10 +342,11 @@ MonoBehaviour:
   - {fileID: 0}
   musicClips:
   - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 8300000, guid: 68d77a1baa8fd6f46849ea50fe5878e1, type: 3}
+  - {fileID: 0}
   - {fileID: 8300000, guid: 643a076ffb2d4eb418e14e0bc06d2a42, type: 3}
   - {fileID: 8300000, guid: dcb7a654d3d15e14cb1ad13e32255e7b, type: 3}
-  - {fileID: 0}
 --- !u!1 &2332484244374091648
 GameObject:
   m_ObjectHideFlags: 0
