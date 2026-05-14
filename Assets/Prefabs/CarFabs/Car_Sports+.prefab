@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 544659857364784731}
   - component: {fileID: -7180550832261958607}
   - component: {fileID: 6443106167649514832}
+  - component: {fileID: 6442106512965502770}
   m_Layer: 0
   m_Name: Car_Sports+
   m_TagString: Car
@@ -203,9 +204,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: 1684967629
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4269551229032242949, guid: d31c63466b6b24424a13dcbc3f07c7f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -217,3 +218,15 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &6442106512965502770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292443566388642967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d16b6d274bc394f9f0397d9c71bc55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
