@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity += bump;
         }
 
-        if (onMudRoad && moveSpeed > 0f)
+        if (onMudRoad && moveSpeed > 2f)
         {
             Debug.Log("Affected by Mud Road");
             moveSpeed -= mudSlowFactor;
