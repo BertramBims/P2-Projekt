@@ -24,6 +24,9 @@ public class PlayerController : MonoBehaviour
     public bool onMudRoad;
     public float mudSlowFactor = 0.0005f;
 
+    public GameObject lightsHolder;
+    public GameObject lightPrefab;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -109,23 +112,9 @@ public class PlayerController : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collides with Obstacle");
-
         if (collision.transform.CompareTag("Obstacle"))
         {
-            Debug.Log("Tag found");
-
-            Light2D light = collision.transform.GetComponentInChildren<Light2D>(true);
-
-            if (light != null)
-            {
-                Debug.Log("Light2D found");
-                light.gameObject.SetActive(true);
-            }
-            else
-            {
-                Debug.Log("No Light2D found");
-            }
+            Instantiate(lightPrefab, collision.contacts[0].point, collision.transform.rotation, lightsHolder.transform);
         }
     }
 

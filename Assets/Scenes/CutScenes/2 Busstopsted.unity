@@ -3393,6 +3393,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8790791078033404054, guid: 03372e98ec3446c42b54c5300d208448, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1357328781}
+    - target: {fileID: 8790791078033404054, guid: 03372e98ec3446c42b54c5300d208448, type: 3}
       propertyPath: debugMovementBool
       value: 1
       objectReference: {fileID: 0}
@@ -4245,6 +4249,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &1035129947 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7878235212809459580, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
+  m_PrefabInstance: {fileID: 2106434245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1058034208
 GameObject:
   m_ObjectHideFlags: 0
@@ -12286,6 +12295,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &1357328781 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6109570728025971833, guid: 03372e98ec3446c42b54c5300d208448, type: 3}
+  m_PrefabInstance: {fileID: 643235918}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1359280283
 GameObject:
   m_ObjectHideFlags: 0
@@ -13613,6 +13627,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6451220775818316688, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1035129947}
     - target: {fileID: 6524340925487535591, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: m_Enabled
       value: 0
