@@ -31,6 +31,7 @@ public class PlayerMobilityController : MonoBehaviour
 
     public int beingPushedMovementSpot;
     public bool debugMovementBool;
+    public GameObject directionIndicator;
 
     private void Awake()
     {
@@ -66,6 +67,7 @@ public class PlayerMobilityController : MonoBehaviour
             //transform.position = playerVisual.GetComponent<PlayerController>().playerMobilityPositionTarget.position;
             transform.position = playerVisual.GetComponent<PlayerController>().pushedMovementSpots[beingPushedMovementSpot - 1].transform.position;
             GetComponent<BoxCollider2D>().enabled = false;
+            directionIndicator.SetActive(false);
         } else
         {
             if (!beingPushed)
@@ -73,6 +75,7 @@ public class PlayerMobilityController : MonoBehaviour
                 HandleMovement();
                 HandleAnimation();
                 GetComponent<BoxCollider2D>().enabled = true;
+                directionIndicator.SetActive(true);
             }
             else if (beingPushed)
             {
@@ -81,9 +84,9 @@ public class PlayerMobilityController : MonoBehaviour
                 //transform.position = playerVisual.GetComponent<PlayerController>().playerMobilityPositionTarget.position;
                 transform.position = playerVisual.GetComponent<PlayerController>().pushedMovementSpots[beingPushedMovementSpot - 1].transform.position;
                 GetComponent<BoxCollider2D>().enabled = false;
+                directionIndicator.SetActive(false);
             }
         }
-        
     }
 
     private void LateUpdate()

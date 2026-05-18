@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using AYellowpaper.SerializedCollections.Editor.Data;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public enum Soundtype
@@ -72,19 +73,23 @@ public class SoundManager : MonoBehaviour
                 break;
 
             case 1:
-                PlayAmbience(3, 4, 5); // Level 1
+                PlayAmbience(3, 4, 5); // INGEN AMBIENCE
                 break;
 
             case 2:
-                PlayAmbience(6, 7, 8); // Level 2
+                PlayAmbience(6, 7, 8); // Level 1
                 break;
 
             case 3:
-                PlayAmbience(9, 10, 11); // Level 3
+                PlayAmbience(9, 10, 11); // INGEN AMBIENCE
                 break;
 
             case 4:
-                PlayAmbience(12, 13, 14); // Level 4
+                PlayAmbience(12, 13, 14); // Level 2
+                break;
+
+            case 5:
+                PlayAmbience(15, 16, 17); // Level 3
                 break;
 
             default:
@@ -150,7 +155,7 @@ public class SoundManager : MonoBehaviour
 
     private void Update()
     {
-        if (ambience1.clip == ambienceClips[0])
+        if (ambience1.clip == ambienceClips[6])
         {
             if (Mathf.Abs(ambience1.volume - targetVolume) < 0.05f) // Hvis den når 0.05f indenfor target, skifter den target
             {
@@ -158,6 +163,11 @@ public class SoundManager : MonoBehaviour
             }
             
             ambience1.volume = Mathf.Lerp(ambience1.volume, targetVolume, Time.deltaTime * 0.5f); // Start lyd til tarrget, med en hastighed
+        }
+
+        if (ambience1.clip == ambienceClips[12])
+        {
+            ambience1.loop = false;
         }
 
         if (musicInGame.isPlaying)

@@ -33,7 +33,7 @@ public class PlayerJoinManager : MonoBehaviour
 
         AssignNextPlayer(device);
     }
-
+                                
     void AssignNextPlayer(InputDevice device)
     {
         if (player1.devices.Contains(device) || player2.devices.Contains(device))

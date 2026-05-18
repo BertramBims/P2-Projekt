@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     [SerializeField] private Animator animator;
-    private GameObject playerMobility;
+    [SerializeField] private GameObject playerMobility;
     //public Transform playerMobilityPositionTarget;
 
     private bool canPushPlayerMobility;
@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
 
     public bool onMudRoad;
     public float mudSlowFactor = 0.0005f;
+
+    public GameObject lightsHolder;
+    public GameObject lightPrefab;
 
     private void Awake()
     {
@@ -62,7 +65,7 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity += bump;
         }
 
-        if (onMudRoad && moveSpeed > 0f)
+        if (onMudRoad && moveSpeed > 1f)
         {
             Debug.Log("Affected by Mud Road");
             moveSpeed -= mudSlowFactor;
@@ -109,23 +112,9 @@ public class PlayerController : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collides with Obstacle");
-
         if (collision.transform.CompareTag("Obstacle"))
         {
-            Debug.Log("Tag found");
-
-            Light2D light = collision.transform.GetComponentInChildren<Light2D>(true);
-
-            if (light != null)
-            {
-                Debug.Log("Light2D found");
-                light.gameObject.SetActive(true);
-            }
-            else
-            {
-                Debug.Log("No Light2D found");
-            }
+            Instantiate(lightPrefab, collision.contacts[0].point, collision.transform.rotation, lightsHolder.transform);
         }
     }
 
