@@ -6749,17 +6749,23 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 4310923910448644607, guid: 03372e98ec3446c42b54c5300d208448, type: 3}
       propertyPath: orthographic size
       value: 100
+=======
+    - target: {fileID: 515188222618387362, guid: 03372e98ec3446c42b54c5300d208448, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 5277658467546332673, guid: 03372e98ec3446c42b54c5300d208448, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.99
+      value: 49.36
       objectReference: {fileID: 0}
     - target: {fileID: 5277658467546332673, guid: 03372e98ec3446c42b54c5300d208448, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.43
+      value: -4.64
       objectReference: {fileID: 0}
     - target: {fileID: 5277658467546332673, guid: 03372e98ec3446c42b54c5300d208448, type: 3}
       propertyPath: m_LocalPosition.z
@@ -312420,6 +312426,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 250807839935891998, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 818338702022312326, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: m_Offset.y
       value: -0.1
@@ -312464,18 +312474,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3020881018817601482, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3426064224130119817, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 30.84
       objectReference: {fileID: 0}
     - target: {fileID: 3426064224130119817, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -14.13
       objectReference: {fileID: 0}
     - target: {fileID: 3439076959008122842, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 6451220775818316688, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: bumpForce
       value: 5
@@ -312487,6 +312502,11 @@ PrefabInstance:
     - target: {fileID: 6451220775818316688, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: mudSlowFactor
       value: 0.05
+=======
+    - target: {fileID: 4957054430117823189, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6524340925487535591, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: m_Enabled
@@ -312496,9 +312516,15 @@ PrefabInstance:
       propertyPath: m_DefaultControlScheme
       value: Keyboard&Mouse
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 6718732289684283559, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: m_ActionEvents.Array.size
       value: 9
+=======
+    - target: {fileID: 7650545092868900152, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8846154100389716647, guid: 945f3babb813ffe4f9e37263270081ec, type: 3}
       propertyPath: m_Name
