@@ -14291,6 +14291,7 @@ MonoBehaviour:
     _serializedList: []
   text: {fileID: 0}
   currentObjective: 0
+  keyHeldIndicator: {fileID: 0}
 --- !u!114 &1360426162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14841,18 +14842,6 @@ PlayableDirector:
     value: {fileID: 1356060819}
   - key: {fileID: 3256275078350046565, guid: 4d18e0050e69847aa98e3172f5890649, type: 2}
     value: {fileID: 554640525}
-  - key: {fileID: 8313692136904624816, guid: 4d18e0050e69847aa98e3172f5890649, type: 2}
-    value: {fileID: 792402765}
-  - key: {fileID: -7606905606441332500, guid: 4d18e0050e69847aa98e3172f5890649, type: 2}
-    value: {fileID: 1119557859}
-  - key: {fileID: -5697092324832602658, guid: 4d18e0050e69847aa98e3172f5890649, type: 2}
-    value: {fileID: 1305958377}
-  - key: {fileID: -7764962747516969496, guid: 4d18e0050e69847aa98e3172f5890649, type: 2}
-    value: {fileID: 320527012}
-  - key: {fileID: 635150979946737867, guid: 4d18e0050e69847aa98e3172f5890649, type: 2}
-    value: {fileID: 114172482}
-  - key: {fileID: 3940930893006681636, guid: 4d18e0050e69847aa98e3172f5890649, type: 2}
-    value: {fileID: 1276698967}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1774687128

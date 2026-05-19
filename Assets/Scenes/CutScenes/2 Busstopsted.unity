@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8957895cf440534ca99e1db0b951446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Typewriter
-  typingSpeed: 0.1
+  typingSpeed: 0.05
   text: {fileID: 26107510}
   typeSound: {fileID: 0}
   audioSource: {fileID: 0}
@@ -639,7 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8957895cf440534ca99e1db0b951446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Typewriter
-  typingSpeed: 0.1
+  typingSpeed: 0.05
   text: {fileID: 90028800}
   typeSound: {fileID: 0}
   audioSource: {fileID: 0}
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8957895cf440534ca99e1db0b951446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Typewriter
-  typingSpeed: 0.05
+  typingSpeed: 0.03
   text: {fileID: 116698800}
   typeSound: {fileID: 0}
   audioSource: {fileID: 0}
@@ -2344,10 +2344,6 @@ PlayableDirector:
     value: {fileID: 580053096}
   - key: {fileID: -8611457241928326989, guid: 7bbfd83a7848343fe9378e49f748dcca, type: 2}
     value: {fileID: 1756623755}
-  - key: {fileID: -5229026150526708794, guid: 7bbfd83a7848343fe9378e49f748dcca, type: 2}
-    value: {fileID: 2119599636}
-  - key: {fileID: -8029015301909075203, guid: 7bbfd83a7848343fe9378e49f748dcca, type: 2}
-    value: {fileID: 2029246808}
   - key: {fileID: 2815645211478208278, guid: 7bbfd83a7848343fe9378e49f748dcca, type: 2}
     value: {fileID: 1221745963}
   - key: {fileID: 3631858568624688351, guid: 7bbfd83a7848343fe9378e49f748dcca, type: 2}
@@ -2366,10 +2362,6 @@ PlayableDirector:
     value: {fileID: 864907943}
   - key: {fileID: 2281687761757170217, guid: 7bbfd83a7848343fe9378e49f748dcca, type: 2}
     value: {fileID: 1108255743}
-  - key: {fileID: 5647258776892292553, guid: 7bbfd83a7848343fe9378e49f748dcca, type: 2}
-    value: {fileID: 262888589}
-  - key: {fileID: -119767747280240454, guid: 7bbfd83a7848343fe9378e49f748dcca, type: 2}
-    value: {fileID: 1221745963}
   - key: {fileID: -468895173117590455, guid: 7bbfd83a7848343fe9378e49f748dcca, type: 2}
     value: {fileID: 152122359}
   - key: {fileID: 3319374386591869400, guid: 7bbfd83a7848343fe9378e49f748dcca, type: 2}
@@ -3689,7 +3681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8957895cf440534ca99e1db0b951446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Typewriter
-  typingSpeed: 0.1
+  typingSpeed: 0.05
   text: {fileID: 778514481}
   typeSound: {fileID: 0}
   audioSource: {fileID: 0}
@@ -13058,7 +13050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8957895cf440534ca99e1db0b951446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Typewriter
-  typingSpeed: 0.1
+  typingSpeed: 0.05
   text: {fileID: 1756623758}
   typeSound: {fileID: 0}
   audioSource: {fileID: 0}
