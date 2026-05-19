@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Movement...")]
     public float moveSpeed = 5f;
+    private float currentSpeed;
     public Vector2 moveInput;
     private Vector2 lastMove;
 
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        currentSpeed = moveSpeed;
     }
 
     private void Update()
@@ -50,7 +52,7 @@ public class PlayerController : MonoBehaviour
 
     void HandleMovement()
     {
-        rb.linearVelocity = moveInput.normalized * moveSpeed;
+        rb.linearVelocity = moveInput.normalized * currentSpeed;
 
         if (moveInput.sqrMagnitude > 0.01f)
         {
@@ -65,10 +67,10 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity += bump;
         }
 
-        if (onMudRoad && moveSpeed > 1f)
+        if (onMudRoad && currentSpeed > 1f)
         {
             Debug.Log("Affected by Mud Road");
-            moveSpeed -= mudSlowFactor;
+            currentSpeed -= mudSlowFactor;
         }
     }
 
@@ -95,6 +97,7 @@ public class PlayerController : MonoBehaviour
             if (playerMobility.GetComponent<PlayerMobilityController>().beingPushed == true)
             {
                 Debug.Log("Set BeingPushed to false");
+                currentSpeed = moveSpeed;
                 playerMobility.GetComponent<PlayerMobilityController>().beingPushed = false;
             }
 
@@ -102,6 +105,7 @@ public class PlayerController : MonoBehaviour
             if (canPushPlayerMobility)
             {
                 Debug.Log("Should overtake control of Mobility_Player now");
+                currentSpeed *= 0.75f;
 
                 //logic for overtaking control of other player
                 playerMobility.GetComponent<PlayerMobilityController>().beingPushed = true;

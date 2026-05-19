@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CutScenes/Copies/Copy_4 Vejen.unity
     guid: ebb32180364feb54c8d3eb5a6d31c288
+  - enabled: 1
+    path: Assets/Scenes/CutScenes/Copies/Copy_5 Koncert.unity
+    guid: dafff99b90261f94b97288895def9673
+  - enabled: 1
+    path: Assets/Scenes/CutScenes/6 Final Concert.unity
+    guid: ca5582ed534e44c369de853499887a99
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -45383,7 +45383,7 @@ MonoBehaviour:
   text: {fileID: 872460108}
   typeSound: {fileID: 0}
   audioSource: {fileID: 0}
-  textEntry: 'Oh shit.. '
+  textEntry: WE have a bunch of spare ones. let me help you back to him and fix it!
 --- !u!114 &872460107
 MonoBehaviour:
   m_ObjectHideFlags: 0
