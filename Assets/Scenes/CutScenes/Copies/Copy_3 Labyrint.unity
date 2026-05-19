@@ -7282,11 +7282,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7255371823740553367, guid: 3d8b00c8f76770043b2589396e9863b8, type: 3}
+      propertyPath: interval
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 606468456233428977, guid: 3d8b00c8f76770043b2589396e9863b8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 291129641}
   m_SourcePrefab: {fileID: 100100000, guid: 3d8b00c8f76770043b2589396e9863b8, type: 3}
+--- !u!1 &291129640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 606468456233428977, guid: 3d8b00c8f76770043b2589396e9863b8, type: 3}
+  m_PrefabInstance: {fileID: 291129639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &291129641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291129640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d4776c4cdb9de47a09d6f1d9995f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InstantiateOverTime
+  prefab: {fileID: 5885229844013896284, guid: f3f499594054f134885d65d4b6c91017, type: 3}
+  interval: 10
+  spawnPoint: {fileID: 0}
 --- !u!95 &291175954
 Animator:
   serializedVersion: 7
@@ -64794,7 +64821,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 3
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
