@@ -1,5 +1,4 @@
-﻿using AYellowpaper.SerializedCollections.Editor.Data;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public enum Soundtype

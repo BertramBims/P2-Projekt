@@ -64,14 +64,18 @@ public class PlayerMobilityController : MonoBehaviour
         {
             Debug.Log("Overriding");
             OverrideAnimation();
-            //transform.position = playerVisual.GetComponent<PlayerController>().playerMobilityPositionTarget.position;
-            transform.position = playerVisual.GetComponent<PlayerController>().pushedMovementSpots[beingPushedMovementSpot - 1].transform.position;
+            //transform.position = playerVisual.GetComponent<PlayerController>().pushedMovementSpots[beingPushedMovementSpot - 1].transform.position;
+            rb.MovePosition(
+                    playerVisual.GetComponent<PlayerController>()
+                    .pushedMovementSpots[beingPushedMovementSpot - 1].transform.position
+                );
             GetComponent<BoxCollider2D>().enabled = false;
             directionIndicator.SetActive(false);
         } else
         {
             if (!beingPushed)
             {
+                Debug.Log("NotOverriding");
                 HandleMovement();
                 HandleAnimation();
                 GetComponent<BoxCollider2D>().enabled = true;
@@ -81,8 +85,11 @@ public class PlayerMobilityController : MonoBehaviour
             {
                 Debug.Log("Overriding");
                 OverrideAnimation();
-                //transform.position = playerVisual.GetComponent<PlayerController>().playerMobilityPositionTarget.position;
-                transform.position = playerVisual.GetComponent<PlayerController>().pushedMovementSpots[beingPushedMovementSpot - 1].transform.position;
+                //transform.position = playerVisual.GetComponent<PlayerController>().pushedMovementSpots[beingPushedMovementSpot - 1].transform.position;
+                rb.MovePosition(
+                    playerVisual.GetComponent<PlayerController>()
+                    .pushedMovementSpots[beingPushedMovementSpot - 1].transform.position
+                    );
                 GetComponent<BoxCollider2D>().enabled = false;
                 directionIndicator.SetActive(false);
             }
@@ -93,6 +100,15 @@ public class PlayerMobilityController : MonoBehaviour
     {
         visual.rotation = Quaternion.identity;
         cameraTransform.rotation = Quaternion.identity;
+
+        /*if (beingPushed || alwaysPushedInThisScene)
+        {
+            cameraTransform.position = new Vector3(
+                transform.position.x,
+                transform.position.y,
+                -10
+            );
+        }*/
     }
 
     void HandleMovement()
